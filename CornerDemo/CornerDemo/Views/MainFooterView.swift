@@ -1,5 +1,5 @@
 //
-//  TypeBreakdownView.swift
+//  MainFooterView.swift
 //  CornerDemo
 //
 //  Created by Amarjit on 06/09/2018.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TypeBreakdownView: UIView {
+/* Holds a scrollview with 2 pages */
+
+class MainFooterView: UIView {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
