@@ -10,5 +10,9 @@ import Foundation
 
 // ViewModel for page
 class RoundViewModel {
-    
+    var pageTitle: String
+
+    init() {
+        self.pageTitle = NSLocalizedString("Round 2", comment: "Page title")
+    }
 }
