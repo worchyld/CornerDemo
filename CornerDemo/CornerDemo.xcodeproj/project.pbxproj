@@ -123,6 +123,8 @@
 		4D83F6A4214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */; };
 		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
+		4DFE9BB82141A2AE00B57D2F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE9BB72141A2AE00B57D2F /* Slide.swift */; };
+		4DFE9BBD2141A2D600B57D2F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DFE9BBC2141A2D600B57D2F /* Slide.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +258,8 @@
 		4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldCaps.otf"; sourceTree = "<group>"; };
 		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
+		4DFE9BB72141A2AE00B57D2F /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		4DFE9BBC2141A2D600B57D2F /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +350,8 @@
 			children = (
 				4D83F5B8214156670036FE28 /* PanelView.swift */,
 				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
+				4DFE9BB72141A2AE00B57D2F /* Slide.swift */,
+				4DFE9BBC2141A2D600B57D2F /* Slide.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -567,6 +573,7 @@
 				4D83F670214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf in Resources */,
 				4D83F699214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf in Resources */,
 				4D83F68A214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf in Resources */,
+				4DFE9BBD2141A2D600B57D2F /* Slide.xib in Resources */,
 				4D83F66B214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf in Resources */,
 				4D83F663214177BC0036FE28 /* Fontfabric - IntroBold.otf in Resources */,
 				4D83F693214177BC0036FE28 /* Fontfabric - Intro Black.ttf in Resources */,
@@ -684,6 +691,7 @@
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
+				4DFE9BB82141A2AE00B57D2F /* Slide.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,
 			);
