@@ -12,13 +12,13 @@ class ViewController: UIViewController {
 
     weak var viewModel: RoundViewModel?
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
 
     private func setup() {
-        
         self.view.backgroundColor = UIColor( Constants.Colours.bgColor )
     }
 

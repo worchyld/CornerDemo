@@ -22,8 +22,6 @@
 		4D83F5C721415E030036FE28 /* HandPunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C621415E030036FE28 /* HandPunchTests.swift */; };
 		4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C8214160C60036FE28 /* RoundViewModel.swift */; };
 		4D83F5CB21416E0E0036FE28 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5CA21416E0E0036FE28 /* HexColors.swift */; };
-		4D83F5CD214170B90036FE28 /* MainFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5CC214170B90036FE28 /* MainFooterView.swift */; };
-		4D83F5CF214170C80036FE28 /* MainFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5CE214170C80036FE28 /* MainFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +54,6 @@
 		4D83F5C621415E030036FE28 /* HandPunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPunchTests.swift; sourceTree = "<group>"; };
 		4D83F5C8214160C60036FE28 /* RoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViewModel.swift; sourceTree = "<group>"; };
 		4D83F5CA21416E0E0036FE28 /* HexColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColors.swift; sourceTree = "<group>"; };
-		4D83F5CC214170B90036FE28 /* MainFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFooterView.swift; sourceTree = "<group>"; };
-		4D83F5CE214170C80036FE28 /* MainFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +143,6 @@
 			children = (
 				4D83F5B8214156670036FE28 /* PanelView.swift */,
 				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
-				4D83F5CC214170B90036FE28 /* MainFooterView.swift */,
-				4D83F5CE214170C80036FE28 /* MainFooterView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,7 +230,6 @@
 			files = (
 				4D83F59E21414D3A0036FE28 /* LaunchScreen.storyboard in Resources */,
 				4D83F5B421414DE10036FE28 /* Round1.csv in Resources */,
-				4D83F5CF214170C80036FE28 /* MainFooterView.xib in Resources */,
 				4D83F59B21414D3A0036FE28 /* Assets.xcassets in Resources */,
 				4D83F59921414D380036FE28 /* Main.storyboard in Resources */,
 				4D83F5B721414E6C0036FE28 /* PanelView.xib in Resources */,
@@ -264,7 +257,6 @@
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
-				4D83F5CD214170B90036FE28 /* MainFooterView.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
