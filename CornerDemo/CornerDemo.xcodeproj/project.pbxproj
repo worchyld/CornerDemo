@@ -21,6 +21,7 @@
 		4D83F5C521415B190036FE28 /* RoundData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C421415B190036FE28 /* RoundData.swift */; };
 		4D83F5C721415E030036FE28 /* HandPunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C621415E030036FE28 /* HandPunchTests.swift */; };
 		4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C8214160C60036FE28 /* RoundViewModel.swift */; };
+		4D83F5CB21416E0E0036FE28 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5CA21416E0E0036FE28 /* HexColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4D83F5C421415B190036FE28 /* RoundData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundData.swift; sourceTree = "<group>"; };
 		4D83F5C621415E030036FE28 /* HandPunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPunchTests.swift; sourceTree = "<group>"; };
 		4D83F5C8214160C60036FE28 /* RoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViewModel.swift; sourceTree = "<group>"; };
+		4D83F5CA21416E0E0036FE28 /* HexColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				4D83F5C22141586B0036FE28 /* Round.swift */,
 				4D83F5C421415B190036FE28 /* RoundData.swift */,
 				4D83F5C8214160C60036FE28 /* RoundViewModel.swift */,
+				4D83F5CA21416E0E0036FE28 /* HexColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D83F5B9214156670036FE28 /* PanelView.swift in Sources */,
+				4D83F5CB21416E0E0036FE28 /* HexColors.swift in Sources */,
 				4D83F5BF214157D20036FE28 /* Enums.swift in Sources */,
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
