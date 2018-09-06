@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     }
 
     private func setup() {
+        
         self.view.backgroundColor = UIColor( Constants.Colours.bgColor )
     }
 
