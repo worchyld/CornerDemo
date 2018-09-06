@@ -22,6 +22,107 @@
 		4D83F5C721415E030036FE28 /* HandPunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C621415E030036FE28 /* HandPunchTests.swift */; };
 		4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5C8214160C60036FE28 /* RoundViewModel.swift */; };
 		4D83F5CB21416E0E0036FE28 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5CA21416E0E0036FE28 /* HexColors.swift */; };
+		4D83F642214177BC0036FE28 /* Fontfabric - IntroCondThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5DB214177BC0036FE28 /* Fontfabric - IntroCondThinItalic.otf */; };
+		4D83F643214177BC0036FE28 /* Fontfabric - IntroCondRegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5DC214177BC0036FE28 /* Fontfabric - IntroCondRegularItalic.otf */; };
+		4D83F644214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5DD214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldItalic.otf */; };
+		4D83F645214177BC0036FE28 /* Fontfabric - IntroCondBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5DE214177BC0036FE28 /* Fontfabric - IntroCondBoldItalic.otf */; };
+		4D83F646214177BC0036FE28 /* Fontfabric - IntroBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5DF214177BC0036FE28 /* Fontfabric - IntroBlack.otf */; };
+		4D83F647214177BC0036FE28 /* Fontfabric - IntroCondLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E0214177BC0036FE28 /* Fontfabric - IntroCondLight.otf */; };
+		4D83F648214177BC0036FE28 /* Fontfabric - IntroCondThinCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E1214177BC0036FE28 /* Fontfabric - IntroCondThinCaps.otf */; };
+		4D83F649214177BC0036FE28 /* Fontfabric Standard Font License.html in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E3214177BC0036FE28 /* Fontfabric Standard Font License.html */; };
+		4D83F64A214177BC0036FE28 /* Fontfabric - IntroCondLightCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E4214177BC0036FE28 /* Fontfabric - IntroCondLightCaps.otf */; };
+		4D83F64B214177BC0036FE28 /* Fontfabric - IntroCondBlackAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E5214177BC0036FE28 /* Fontfabric - IntroCondBlackAlt.otf */; };
+		4D83F64C214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E6214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf */; };
+		4D83F64D214177BC0036FE28 /* Fontfabric - IntroRegularCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E7214177BC0036FE28 /* Fontfabric - IntroRegularCaps.otf */; };
+		4D83F64E214177BC0036FE28 /* Fontfabric - IntroCondRegularCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E8214177BC0036FE28 /* Fontfabric - IntroCondRegularCaps.otf */; };
+		4D83F64F214177BC0036FE28 /* Fontfabric - IntroRegularAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5E9214177BC0036FE28 /* Fontfabric - IntroRegularAlt.otf */; };
+		4D83F650214177BC0036FE28 /* Fontfabric - IntroCondBoldAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5EA214177BC0036FE28 /* Fontfabric - IntroCondBoldAlt.otf */; };
+		4D83F651214177BC0036FE28 /* Fontfabric - IntroCondThinAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5EB214177BC0036FE28 /* Fontfabric - IntroCondThinAlt.otf */; };
+		4D83F652214177BC0036FE28 /* Fontfabric - IntroSemiBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5EC214177BC0036FE28 /* Fontfabric - IntroSemiBoldCaps.otf */; };
+		4D83F653214177BC0036FE28 /* Fontfabric - IntroLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5ED214177BC0036FE28 /* Fontfabric - IntroLightAlt.otf */; };
+		4D83F654214177BC0036FE28 /* Fontfabric - IntroBlackInlineCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5EE214177BC0036FE28 /* Fontfabric - IntroBlackInlineCaps.otf */; };
+		4D83F655214177BC0036FE28 /* Fontfabric - IntroBlackCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5EF214177BC0036FE28 /* Fontfabric - IntroBlackCaps.otf */; };
+		4D83F656214177BC0036FE28 /* Fontfabric - IntroBoldAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F0214177BC0036FE28 /* Fontfabric - IntroBoldAlt.otf */; };
+		4D83F657214177BC0036FE28 /* Fontfabric - IntroThinAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F1214177BC0036FE28 /* Fontfabric - IntroThinAlt.otf */; };
+		4D83F658214177BC0036FE28 /* Fontfabric - IntroBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F2214177BC0036FE28 /* Fontfabric - IntroBoldCaps.otf */; };
+		4D83F659214177BC0036FE28 /* Fontfabric - IntroCondRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F3214177BC0036FE28 /* Fontfabric - IntroCondRegular.otf */; };
+		4D83F65A214177BC0036FE28 /* Fontfabric - IntroCondRegularAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F4214177BC0036FE28 /* Fontfabric - IntroCondRegularAlt.otf */; };
+		4D83F65B214177BC0036FE28 /* Fontfabric - IntroCondBlackCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F5214177BC0036FE28 /* Fontfabric - IntroCondBlackCaps.otf */; };
+		4D83F65C214177BC0036FE28 /* Fontfabric - IntroThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F6214177BC0036FE28 /* Fontfabric - IntroThin.otf */; };
+		4D83F65D214177BC0036FE28 /* Fontfabric - IntroCondThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F7214177BC0036FE28 /* Fontfabric - IntroCondThin.otf */; };
+		4D83F65E214177BC0036FE28 /* Fontfabric - IntroRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F8214177BC0036FE28 /* Fontfabric - IntroRegular.otf */; };
+		4D83F65F214177BC0036FE28 /* Fontfabric - IntroCondBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5F9214177BC0036FE28 /* Fontfabric - IntroCondBold.otf */; };
+		4D83F660214177BC0036FE28 /* Fontfabric - IntroThinCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5FA214177BC0036FE28 /* Fontfabric - IntroThinCaps.otf */; };
+		4D83F661214177BC0036FE28 /* Fontfabric - IntroBlackInline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5FB214177BC0036FE28 /* Fontfabric - IntroBlackInline.otf */; };
+		4D83F662214177BC0036FE28 /* Fontfabric - IntroBlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5FC214177BC0036FE28 /* Fontfabric - IntroBlackItalic.otf */; };
+		4D83F663214177BC0036FE28 /* Fontfabric - IntroBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5FD214177BC0036FE28 /* Fontfabric - IntroBold.otf */; };
+		4D83F664214177BC0036FE28 /* Fontfabric - IntroBlackAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5FE214177BC0036FE28 /* Fontfabric - IntroBlackAlt.otf */; };
+		4D83F665214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5FF214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldAlt.otf */; };
+		4D83F666214177BC0036FE28 /* Fontfabric - IntroCondBlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F600214177BC0036FE28 /* Fontfabric - IntroCondBlackItalic.otf */; };
+		4D83F667214177BC0036FE28 /* Fontfabric - IntroSemiBoldAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F601214177BC0036FE28 /* Fontfabric - IntroSemiBoldAlt.otf */; };
+		4D83F668214177BC0036FE28 /* Fontfabric - IntroRegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F602214177BC0036FE28 /* Fontfabric - IntroRegularItalic.otf */; };
+		4D83F669214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F603214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldCaps.otf */; };
+		4D83F66A214177BC0036FE28 /* Fontfabric - IntroBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F604214177BC0036FE28 /* Fontfabric - IntroBoldItalic.otf */; };
+		4D83F66B214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F605214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf */; };
+		4D83F66C214177BC0036FE28 /* Fontfabric - Intro Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F607214177BC0036FE28 /* Fontfabric - Intro Thin.ttf */; };
+		4D83F66D214177BC0036FE28 /* Fontfabric - Intro Thin Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F608214177BC0036FE28 /* Fontfabric - Intro Thin Italic.ttf */; };
+		4D83F66E214177BC0036FE28 /* Fontfabric - Intro Black Inline Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F609214177BC0036FE28 /* Fontfabric - Intro Black Inline Caps.ttf */; };
+		4D83F66F214177BC0036FE28 /* Fontfabric - Intro Cond Regular Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F60A214177BC0036FE28 /* Fontfabric - Intro Cond Regular Italic.ttf */; };
+		4D83F670214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F60B214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf */; };
+		4D83F671214177BC0036FE28 /* Fontfabric - Intro Cond Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F60C214177BC0036FE28 /* Fontfabric - Intro Cond Light Italic.ttf */; };
+		4D83F672214177BC0036FE28 /* Fontfabric - Intro Black Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F60D214177BC0036FE28 /* Fontfabric - Intro Black Caps.ttf */; };
+		4D83F673214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F60E214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf */; };
+		4D83F674214177BC0036FE28 /* Fontfabric - Intro Cond Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F60F214177BC0036FE28 /* Fontfabric - Intro Cond Light.ttf */; };
+		4D83F675214177BC0036FE28 /* Fontfabric - Intro Cond Light Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F610214177BC0036FE28 /* Fontfabric - Intro Cond Light Alt.ttf */; };
+		4D83F676214177BC0036FE28 /* Fontfabric - Intro Regular Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F611214177BC0036FE28 /* Fontfabric - Intro Regular Caps.ttf */; };
+		4D83F677214177BC0036FE28 /* Fontfabric - Intro Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F612214177BC0036FE28 /* Fontfabric - Intro Light.ttf */; };
+		4D83F678214177BC0036FE28 /* Fontfabric - Intro Bold Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F613214177BC0036FE28 /* Fontfabric - Intro Bold Caps.ttf */; };
+		4D83F679214177BC0036FE28 /* Fontfabric - Intro Cond Regular Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F614214177BC0036FE28 /* Fontfabric - Intro Cond Regular Alt.ttf */; };
+		4D83F67A214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F615214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Alt.ttf */; };
+		4D83F67B214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F616214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold.ttf */; };
+		4D83F67C214177BC0036FE28 /* Fontfabric - Intro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F617214177BC0036FE28 /* Fontfabric - Intro Bold.ttf */; };
+		4D83F67D214177BC0036FE28 /* Fontfabric - Intro Black Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F618214177BC0036FE28 /* Fontfabric - Intro Black Alt.ttf */; };
+		4D83F67E214177BC0036FE28 /* Fontfabric - Intro Light Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F619214177BC0036FE28 /* Fontfabric - Intro Light Caps.ttf */; };
+		4D83F67F214177BC0036FE28 /* Fontfabric - Intro Regular Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F61A214177BC0036FE28 /* Fontfabric - Intro Regular Alt.ttf */; };
+		4D83F680214177BC0036FE28 /* Fontfabric - Intro SemiBold Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F61B214177BC0036FE28 /* Fontfabric - Intro SemiBold Alt.ttf */; };
+		4D83F681214177BC0036FE28 /* Fontfabric - Intro SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F61C214177BC0036FE28 /* Fontfabric - Intro SemiBold.ttf */; };
+		4D83F682214177BC0036FE28 /* Fontfabric - Intro Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F61D214177BC0036FE28 /* Fontfabric - Intro Regular.ttf */; };
+		4D83F683214177BC0036FE28 /* Fontfabric - Intro Cond Regular Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F61E214177BC0036FE28 /* Fontfabric - Intro Cond Regular Caps.ttf */; };
+		4D83F684214177BC0036FE28 /* Fontfabric - Intro Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F61F214177BC0036FE28 /* Fontfabric - Intro Light Italic.ttf */; };
+		4D83F685214177BC0036FE28 /* Fontfabric - Intro Cond Thin Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F620214177BC0036FE28 /* Fontfabric - Intro Cond Thin Italic.ttf */; };
+		4D83F686214177BC0036FE28 /* Fontfabric - Intro Cond Bold Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F621214177BC0036FE28 /* Fontfabric - Intro Cond Bold Alt.ttf */; };
+		4D83F687214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F622214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf */; };
+		4D83F688214177BC0036FE28 /* Fontfabric - Intro Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F623214177BC0036FE28 /* Fontfabric - Intro Bold Italic.ttf */; };
+		4D83F689214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F624214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf */; };
+		4D83F68A214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F625214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf */; };
+		4D83F68B214177BC0036FE28 /* Fontfabric - Intro Regular Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F626214177BC0036FE28 /* Fontfabric - Intro Regular Italic.ttf */; };
+		4D83F68C214177BC0036FE28 /* Fontfabric - Intro Cond Thin Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F627214177BC0036FE28 /* Fontfabric - Intro Cond Thin Alt.ttf */; };
+		4D83F68D214177BC0036FE28 /* Fontfabric - Intro Cond Light Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F628214177BC0036FE28 /* Fontfabric - Intro Cond Light Caps.ttf */; };
+		4D83F68E214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F629214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Caps.ttf */; };
+		4D83F68F214177BC0036FE28 /* Fontfabric - Intro SemiBold Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F62A214177BC0036FE28 /* Fontfabric - Intro SemiBold Caps.ttf */; };
+		4D83F690214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F62B214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf */; };
+		4D83F691214177BC0036FE28 /* Fontfabric - Intro Thin Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F62C214177BC0036FE28 /* Fontfabric - Intro Thin Caps.ttf */; };
+		4D83F692214177BC0036FE28 /* Fontfabric - Intro Thin Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F62D214177BC0036FE28 /* Fontfabric - Intro Thin Alt.ttf */; };
+		4D83F693214177BC0036FE28 /* Fontfabric - Intro Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F62E214177BC0036FE28 /* Fontfabric - Intro Black.ttf */; };
+		4D83F694214177BC0036FE28 /* Fontfabric - Intro Cond Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F62F214177BC0036FE28 /* Fontfabric - Intro Cond Black.ttf */; };
+		4D83F695214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F630214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf */; };
+		4D83F696214177BC0036FE28 /* Fontfabric - Intro Cond Bold Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F631214177BC0036FE28 /* Fontfabric - Intro Cond Bold Caps.ttf */; };
+		4D83F697214177BC0036FE28 /* Fontfabric - Intro Cond Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F632214177BC0036FE28 /* Fontfabric - Intro Cond Thin.ttf */; };
+		4D83F698214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F633214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf */; };
+		4D83F699214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F634214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf */; };
+		4D83F69A214177BC0036FE28 /* Fontfabric - Intro Black Inline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F635214177BC0036FE28 /* Fontfabric - Intro Black Inline.ttf */; };
+		4D83F69B214177BC0036FE28 /* Fontfabric - Intro Black Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F636214177BC0036FE28 /* Fontfabric - Intro Black Italic.ttf */; };
+		4D83F69C214177BC0036FE28 /* Fontfabric - Intro Cond Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F637214177BC0036FE28 /* Fontfabric - Intro Cond Regular.ttf */; };
+		4D83F69D214177BC0036FE28 /* Fontfabric - Intro Cond Black Caps.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F638214177BC0036FE28 /* Fontfabric - Intro Cond Black Caps.ttf */; };
+		4D83F69E214177BC0036FE28 /* Fontfabric - IntroLightCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F639214177BC0036FE28 /* Fontfabric - IntroLightCaps.otf */; };
+		4D83F69F214177BC0036FE28 /* Fontfabric - IntroSemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63A214177BC0036FE28 /* Fontfabric - IntroSemiBoldItalic.otf */; };
+		4D83F6A0214177BC0036FE28 /* Fontfabric - IntroLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63B214177BC0036FE28 /* Fontfabric - IntroLightItalic.otf */; };
+		4D83F6A1214177BC0036FE28 /* Fontfabric - IntroCondSemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63C214177BC0036FE28 /* Fontfabric - IntroCondSemiBold.otf */; };
+		4D83F6A2214177BC0036FE28 /* Fontfabric - IntroCondLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63D214177BC0036FE28 /* Fontfabric - IntroCondLightItalic.otf */; };
+		4D83F6A3214177BC0036FE28 /* Fontfabric - IntroThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63E214177BC0036FE28 /* Fontfabric - IntroThinItalic.otf */; };
+		4D83F6A4214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */; };
+		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
+		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +155,107 @@
 		4D83F5C621415E030036FE28 /* HandPunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPunchTests.swift; sourceTree = "<group>"; };
 		4D83F5C8214160C60036FE28 /* RoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViewModel.swift; sourceTree = "<group>"; };
 		4D83F5CA21416E0E0036FE28 /* HexColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColors.swift; sourceTree = "<group>"; };
+		4D83F5DB214177BC0036FE28 /* Fontfabric - IntroCondThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondThinItalic.otf"; sourceTree = "<group>"; };
+		4D83F5DC214177BC0036FE28 /* Fontfabric - IntroCondRegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondRegularItalic.otf"; sourceTree = "<group>"; };
+		4D83F5DD214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondSemiBoldItalic.otf"; sourceTree = "<group>"; };
+		4D83F5DE214177BC0036FE28 /* Fontfabric - IntroCondBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldItalic.otf"; sourceTree = "<group>"; };
+		4D83F5DF214177BC0036FE28 /* Fontfabric - IntroBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBlack.otf"; sourceTree = "<group>"; };
+		4D83F5E0214177BC0036FE28 /* Fontfabric - IntroCondLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLight.otf"; sourceTree = "<group>"; };
+		4D83F5E1214177BC0036FE28 /* Fontfabric - IntroCondThinCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondThinCaps.otf"; sourceTree = "<group>"; };
+		4D83F5E3214177BC0036FE28 /* Fontfabric Standard Font License.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Fontfabric Standard Font License.html"; sourceTree = "<group>"; };
+		4D83F5E4214177BC0036FE28 /* Fontfabric - IntroCondLightCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightCaps.otf"; sourceTree = "<group>"; };
+		4D83F5E5214177BC0036FE28 /* Fontfabric - IntroCondBlackAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBlackAlt.otf"; sourceTree = "<group>"; };
+		4D83F5E6214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroSemiBold.otf"; sourceTree = "<group>"; };
+		4D83F5E7214177BC0036FE28 /* Fontfabric - IntroRegularCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroRegularCaps.otf"; sourceTree = "<group>"; };
+		4D83F5E8214177BC0036FE28 /* Fontfabric - IntroCondRegularCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondRegularCaps.otf"; sourceTree = "<group>"; };
+		4D83F5E9214177BC0036FE28 /* Fontfabric - IntroRegularAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroRegularAlt.otf"; sourceTree = "<group>"; };
+		4D83F5EA214177BC0036FE28 /* Fontfabric - IntroCondBoldAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldAlt.otf"; sourceTree = "<group>"; };
+		4D83F5EB214177BC0036FE28 /* Fontfabric - IntroCondThinAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondThinAlt.otf"; sourceTree = "<group>"; };
+		4D83F5EC214177BC0036FE28 /* Fontfabric - IntroSemiBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroSemiBoldCaps.otf"; sourceTree = "<group>"; };
+		4D83F5ED214177BC0036FE28 /* Fontfabric - IntroLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLightAlt.otf"; sourceTree = "<group>"; };
+		4D83F5EE214177BC0036FE28 /* Fontfabric - IntroBlackInlineCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBlackInlineCaps.otf"; sourceTree = "<group>"; };
+		4D83F5EF214177BC0036FE28 /* Fontfabric - IntroBlackCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBlackCaps.otf"; sourceTree = "<group>"; };
+		4D83F5F0214177BC0036FE28 /* Fontfabric - IntroBoldAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBoldAlt.otf"; sourceTree = "<group>"; };
+		4D83F5F1214177BC0036FE28 /* Fontfabric - IntroThinAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroThinAlt.otf"; sourceTree = "<group>"; };
+		4D83F5F2214177BC0036FE28 /* Fontfabric - IntroBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBoldCaps.otf"; sourceTree = "<group>"; };
+		4D83F5F3214177BC0036FE28 /* Fontfabric - IntroCondRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondRegular.otf"; sourceTree = "<group>"; };
+		4D83F5F4214177BC0036FE28 /* Fontfabric - IntroCondRegularAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondRegularAlt.otf"; sourceTree = "<group>"; };
+		4D83F5F5214177BC0036FE28 /* Fontfabric - IntroCondBlackCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBlackCaps.otf"; sourceTree = "<group>"; };
+		4D83F5F6214177BC0036FE28 /* Fontfabric - IntroThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroThin.otf"; sourceTree = "<group>"; };
+		4D83F5F7214177BC0036FE28 /* Fontfabric - IntroCondThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondThin.otf"; sourceTree = "<group>"; };
+		4D83F5F8214177BC0036FE28 /* Fontfabric - IntroRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroRegular.otf"; sourceTree = "<group>"; };
+		4D83F5F9214177BC0036FE28 /* Fontfabric - IntroCondBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBold.otf"; sourceTree = "<group>"; };
+		4D83F5FA214177BC0036FE28 /* Fontfabric - IntroThinCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroThinCaps.otf"; sourceTree = "<group>"; };
+		4D83F5FB214177BC0036FE28 /* Fontfabric - IntroBlackInline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBlackInline.otf"; sourceTree = "<group>"; };
+		4D83F5FC214177BC0036FE28 /* Fontfabric - IntroBlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBlackItalic.otf"; sourceTree = "<group>"; };
+		4D83F5FD214177BC0036FE28 /* Fontfabric - IntroBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBold.otf"; sourceTree = "<group>"; };
+		4D83F5FE214177BC0036FE28 /* Fontfabric - IntroBlackAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBlackAlt.otf"; sourceTree = "<group>"; };
+		4D83F5FF214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondSemiBoldAlt.otf"; sourceTree = "<group>"; };
+		4D83F600214177BC0036FE28 /* Fontfabric - IntroCondBlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBlackItalic.otf"; sourceTree = "<group>"; };
+		4D83F601214177BC0036FE28 /* Fontfabric - IntroSemiBoldAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroSemiBoldAlt.otf"; sourceTree = "<group>"; };
+		4D83F602214177BC0036FE28 /* Fontfabric - IntroRegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroRegularItalic.otf"; sourceTree = "<group>"; };
+		4D83F603214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondSemiBoldCaps.otf"; sourceTree = "<group>"; };
+		4D83F604214177BC0036FE28 /* Fontfabric - IntroBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroBoldItalic.otf"; sourceTree = "<group>"; };
+		4D83F605214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBlack.otf"; sourceTree = "<group>"; };
+		4D83F607214177BC0036FE28 /* Fontfabric - Intro Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Thin.ttf"; sourceTree = "<group>"; };
+		4D83F608214177BC0036FE28 /* Fontfabric - Intro Thin Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Thin Italic.ttf"; sourceTree = "<group>"; };
+		4D83F609214177BC0036FE28 /* Fontfabric - Intro Black Inline Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Black Inline Caps.ttf"; sourceTree = "<group>"; };
+		4D83F60A214177BC0036FE28 /* Fontfabric - Intro Cond Regular Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Regular Italic.ttf"; sourceTree = "<group>"; };
+		4D83F60B214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Bold Alt.ttf"; sourceTree = "<group>"; };
+		4D83F60C214177BC0036FE28 /* Fontfabric - Intro Cond Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Light Italic.ttf"; sourceTree = "<group>"; };
+		4D83F60D214177BC0036FE28 /* Fontfabric - Intro Black Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Black Caps.ttf"; sourceTree = "<group>"; };
+		4D83F60E214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Bold Italic.ttf"; sourceTree = "<group>"; };
+		4D83F60F214177BC0036FE28 /* Fontfabric - Intro Cond Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Light.ttf"; sourceTree = "<group>"; };
+		4D83F610214177BC0036FE28 /* Fontfabric - Intro Cond Light Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Light Alt.ttf"; sourceTree = "<group>"; };
+		4D83F611214177BC0036FE28 /* Fontfabric - Intro Regular Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Regular Caps.ttf"; sourceTree = "<group>"; };
+		4D83F612214177BC0036FE28 /* Fontfabric - Intro Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Light.ttf"; sourceTree = "<group>"; };
+		4D83F613214177BC0036FE28 /* Fontfabric - Intro Bold Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Bold Caps.ttf"; sourceTree = "<group>"; };
+		4D83F614214177BC0036FE28 /* Fontfabric - Intro Cond Regular Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Regular Alt.ttf"; sourceTree = "<group>"; };
+		4D83F615214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond SemiBold Alt.ttf"; sourceTree = "<group>"; };
+		4D83F616214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond SemiBold.ttf"; sourceTree = "<group>"; };
+		4D83F617214177BC0036FE28 /* Fontfabric - Intro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Bold.ttf"; sourceTree = "<group>"; };
+		4D83F618214177BC0036FE28 /* Fontfabric - Intro Black Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Black Alt.ttf"; sourceTree = "<group>"; };
+		4D83F619214177BC0036FE28 /* Fontfabric - Intro Light Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Light Caps.ttf"; sourceTree = "<group>"; };
+		4D83F61A214177BC0036FE28 /* Fontfabric - Intro Regular Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Regular Alt.ttf"; sourceTree = "<group>"; };
+		4D83F61B214177BC0036FE28 /* Fontfabric - Intro SemiBold Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro SemiBold Alt.ttf"; sourceTree = "<group>"; };
+		4D83F61C214177BC0036FE28 /* Fontfabric - Intro SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro SemiBold.ttf"; sourceTree = "<group>"; };
+		4D83F61D214177BC0036FE28 /* Fontfabric - Intro Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Regular.ttf"; sourceTree = "<group>"; };
+		4D83F61E214177BC0036FE28 /* Fontfabric - Intro Cond Regular Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Regular Caps.ttf"; sourceTree = "<group>"; };
+		4D83F61F214177BC0036FE28 /* Fontfabric - Intro Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Light Italic.ttf"; sourceTree = "<group>"; };
+		4D83F620214177BC0036FE28 /* Fontfabric - Intro Cond Thin Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Thin Italic.ttf"; sourceTree = "<group>"; };
+		4D83F621214177BC0036FE28 /* Fontfabric - Intro Cond Bold Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Bold Alt.ttf"; sourceTree = "<group>"; };
+		4D83F622214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Thin Caps.ttf"; sourceTree = "<group>"; };
+		4D83F623214177BC0036FE28 /* Fontfabric - Intro Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Bold Italic.ttf"; sourceTree = "<group>"; };
+		4D83F624214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Black Alt.ttf"; sourceTree = "<group>"; };
+		4D83F625214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Black Italic.ttf"; sourceTree = "<group>"; };
+		4D83F626214177BC0036FE28 /* Fontfabric - Intro Regular Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Regular Italic.ttf"; sourceTree = "<group>"; };
+		4D83F627214177BC0036FE28 /* Fontfabric - Intro Cond Thin Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Thin Alt.ttf"; sourceTree = "<group>"; };
+		4D83F628214177BC0036FE28 /* Fontfabric - Intro Cond Light Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Light Caps.ttf"; sourceTree = "<group>"; };
+		4D83F629214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond SemiBold Caps.ttf"; sourceTree = "<group>"; };
+		4D83F62A214177BC0036FE28 /* Fontfabric - Intro SemiBold Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro SemiBold Caps.ttf"; sourceTree = "<group>"; };
+		4D83F62B214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro SemiBold Italic.ttf"; sourceTree = "<group>"; };
+		4D83F62C214177BC0036FE28 /* Fontfabric - Intro Thin Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Thin Caps.ttf"; sourceTree = "<group>"; };
+		4D83F62D214177BC0036FE28 /* Fontfabric - Intro Thin Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Thin Alt.ttf"; sourceTree = "<group>"; };
+		4D83F62E214177BC0036FE28 /* Fontfabric - Intro Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Black.ttf"; sourceTree = "<group>"; };
+		4D83F62F214177BC0036FE28 /* Fontfabric - Intro Cond Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Black.ttf"; sourceTree = "<group>"; };
+		4D83F630214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Bold.ttf"; sourceTree = "<group>"; };
+		4D83F631214177BC0036FE28 /* Fontfabric - Intro Cond Bold Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Bold Caps.ttf"; sourceTree = "<group>"; };
+		4D83F632214177BC0036FE28 /* Fontfabric - Intro Cond Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Thin.ttf"; sourceTree = "<group>"; };
+		4D83F633214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Light Alt.ttf"; sourceTree = "<group>"; };
+		4D83F634214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond SemiBold Italic.ttf"; sourceTree = "<group>"; };
+		4D83F635214177BC0036FE28 /* Fontfabric - Intro Black Inline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Black Inline.ttf"; sourceTree = "<group>"; };
+		4D83F636214177BC0036FE28 /* Fontfabric - Intro Black Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Black Italic.ttf"; sourceTree = "<group>"; };
+		4D83F637214177BC0036FE28 /* Fontfabric - Intro Cond Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Regular.ttf"; sourceTree = "<group>"; };
+		4D83F638214177BC0036FE28 /* Fontfabric - Intro Cond Black Caps.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Intro Cond Black Caps.ttf"; sourceTree = "<group>"; };
+		4D83F639214177BC0036FE28 /* Fontfabric - IntroLightCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLightCaps.otf"; sourceTree = "<group>"; };
+		4D83F63A214177BC0036FE28 /* Fontfabric - IntroSemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroSemiBoldItalic.otf"; sourceTree = "<group>"; };
+		4D83F63B214177BC0036FE28 /* Fontfabric - IntroLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLightItalic.otf"; sourceTree = "<group>"; };
+		4D83F63C214177BC0036FE28 /* Fontfabric - IntroCondSemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondSemiBold.otf"; sourceTree = "<group>"; };
+		4D83F63D214177BC0036FE28 /* Fontfabric - IntroCondLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightItalic.otf"; sourceTree = "<group>"; };
+		4D83F63E214177BC0036FE28 /* Fontfabric - IntroThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroThinItalic.otf"; sourceTree = "<group>"; };
+		4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldCaps.otf"; sourceTree = "<group>"; };
+		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
+		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +297,7 @@
 		4D83F59221414D380036FE28 /* CornerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D83F5DA214177BC0036FE28 /* Fonts */,
 				4D83F5B521414DE70036FE28 /* CSV */,
 				4D83F59321414D380036FE28 /* AppDelegate.swift */,
 				4D83F59521414D380036FE28 /* ViewController.swift */,
@@ -145,6 +348,130 @@
 				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4D83F5DA214177BC0036FE28 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4D83F5DB214177BC0036FE28 /* Fontfabric - IntroCondThinItalic.otf */,
+				4D83F5DC214177BC0036FE28 /* Fontfabric - IntroCondRegularItalic.otf */,
+				4D83F5DD214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldItalic.otf */,
+				4D83F5DE214177BC0036FE28 /* Fontfabric - IntroCondBoldItalic.otf */,
+				4D83F5DF214177BC0036FE28 /* Fontfabric - IntroBlack.otf */,
+				4D83F5E0214177BC0036FE28 /* Fontfabric - IntroCondLight.otf */,
+				4D83F5E1214177BC0036FE28 /* Fontfabric - IntroCondThinCaps.otf */,
+				4D83F5E2214177BC0036FE28 /* Licenses */,
+				4D83F5E4214177BC0036FE28 /* Fontfabric - IntroCondLightCaps.otf */,
+				4D83F5E5214177BC0036FE28 /* Fontfabric - IntroCondBlackAlt.otf */,
+				4D83F5E6214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf */,
+				4D83F5E7214177BC0036FE28 /* Fontfabric - IntroRegularCaps.otf */,
+				4D83F5E8214177BC0036FE28 /* Fontfabric - IntroCondRegularCaps.otf */,
+				4D83F5E9214177BC0036FE28 /* Fontfabric - IntroRegularAlt.otf */,
+				4D83F5EA214177BC0036FE28 /* Fontfabric - IntroCondBoldAlt.otf */,
+				4D83F5EB214177BC0036FE28 /* Fontfabric - IntroCondThinAlt.otf */,
+				4D83F5EC214177BC0036FE28 /* Fontfabric - IntroSemiBoldCaps.otf */,
+				4D83F5ED214177BC0036FE28 /* Fontfabric - IntroLightAlt.otf */,
+				4D83F5EE214177BC0036FE28 /* Fontfabric - IntroBlackInlineCaps.otf */,
+				4D83F5EF214177BC0036FE28 /* Fontfabric - IntroBlackCaps.otf */,
+				4D83F5F0214177BC0036FE28 /* Fontfabric - IntroBoldAlt.otf */,
+				4D83F5F1214177BC0036FE28 /* Fontfabric - IntroThinAlt.otf */,
+				4D83F5F2214177BC0036FE28 /* Fontfabric - IntroBoldCaps.otf */,
+				4D83F5F3214177BC0036FE28 /* Fontfabric - IntroCondRegular.otf */,
+				4D83F5F4214177BC0036FE28 /* Fontfabric - IntroCondRegularAlt.otf */,
+				4D83F5F5214177BC0036FE28 /* Fontfabric - IntroCondBlackCaps.otf */,
+				4D83F5F6214177BC0036FE28 /* Fontfabric - IntroThin.otf */,
+				4D83F5F7214177BC0036FE28 /* Fontfabric - IntroCondThin.otf */,
+				4D83F5F8214177BC0036FE28 /* Fontfabric - IntroRegular.otf */,
+				4D83F5F9214177BC0036FE28 /* Fontfabric - IntroCondBold.otf */,
+				4D83F5FA214177BC0036FE28 /* Fontfabric - IntroThinCaps.otf */,
+				4D83F5FB214177BC0036FE28 /* Fontfabric - IntroBlackInline.otf */,
+				4D83F5FC214177BC0036FE28 /* Fontfabric - IntroBlackItalic.otf */,
+				4D83F5FD214177BC0036FE28 /* Fontfabric - IntroBold.otf */,
+				4D83F5FE214177BC0036FE28 /* Fontfabric - IntroBlackAlt.otf */,
+				4D83F5FF214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldAlt.otf */,
+				4D83F600214177BC0036FE28 /* Fontfabric - IntroCondBlackItalic.otf */,
+				4D83F601214177BC0036FE28 /* Fontfabric - IntroSemiBoldAlt.otf */,
+				4D83F602214177BC0036FE28 /* Fontfabric - IntroRegularItalic.otf */,
+				4D83F603214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldCaps.otf */,
+				4D83F604214177BC0036FE28 /* Fontfabric - IntroBoldItalic.otf */,
+				4D83F605214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf */,
+				4D83F606214177BC0036FE28 /* Alternative files */,
+				4D83F639214177BC0036FE28 /* Fontfabric - IntroLightCaps.otf */,
+				4D83F63A214177BC0036FE28 /* Fontfabric - IntroSemiBoldItalic.otf */,
+				4D83F63B214177BC0036FE28 /* Fontfabric - IntroLightItalic.otf */,
+				4D83F63C214177BC0036FE28 /* Fontfabric - IntroCondSemiBold.otf */,
+				4D83F63D214177BC0036FE28 /* Fontfabric - IntroCondLightItalic.otf */,
+				4D83F63E214177BC0036FE28 /* Fontfabric - IntroThinItalic.otf */,
+				4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */,
+				4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */,
+				4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4D83F5E2214177BC0036FE28 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				4D83F5E3214177BC0036FE28 /* Fontfabric Standard Font License.html */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		4D83F606214177BC0036FE28 /* Alternative files */ = {
+			isa = PBXGroup;
+			children = (
+				4D83F607214177BC0036FE28 /* Fontfabric - Intro Thin.ttf */,
+				4D83F608214177BC0036FE28 /* Fontfabric - Intro Thin Italic.ttf */,
+				4D83F609214177BC0036FE28 /* Fontfabric - Intro Black Inline Caps.ttf */,
+				4D83F60A214177BC0036FE28 /* Fontfabric - Intro Cond Regular Italic.ttf */,
+				4D83F60B214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf */,
+				4D83F60C214177BC0036FE28 /* Fontfabric - Intro Cond Light Italic.ttf */,
+				4D83F60D214177BC0036FE28 /* Fontfabric - Intro Black Caps.ttf */,
+				4D83F60E214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf */,
+				4D83F60F214177BC0036FE28 /* Fontfabric - Intro Cond Light.ttf */,
+				4D83F610214177BC0036FE28 /* Fontfabric - Intro Cond Light Alt.ttf */,
+				4D83F611214177BC0036FE28 /* Fontfabric - Intro Regular Caps.ttf */,
+				4D83F612214177BC0036FE28 /* Fontfabric - Intro Light.ttf */,
+				4D83F613214177BC0036FE28 /* Fontfabric - Intro Bold Caps.ttf */,
+				4D83F614214177BC0036FE28 /* Fontfabric - Intro Cond Regular Alt.ttf */,
+				4D83F615214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Alt.ttf */,
+				4D83F616214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold.ttf */,
+				4D83F617214177BC0036FE28 /* Fontfabric - Intro Bold.ttf */,
+				4D83F618214177BC0036FE28 /* Fontfabric - Intro Black Alt.ttf */,
+				4D83F619214177BC0036FE28 /* Fontfabric - Intro Light Caps.ttf */,
+				4D83F61A214177BC0036FE28 /* Fontfabric - Intro Regular Alt.ttf */,
+				4D83F61B214177BC0036FE28 /* Fontfabric - Intro SemiBold Alt.ttf */,
+				4D83F61C214177BC0036FE28 /* Fontfabric - Intro SemiBold.ttf */,
+				4D83F61D214177BC0036FE28 /* Fontfabric - Intro Regular.ttf */,
+				4D83F61E214177BC0036FE28 /* Fontfabric - Intro Cond Regular Caps.ttf */,
+				4D83F61F214177BC0036FE28 /* Fontfabric - Intro Light Italic.ttf */,
+				4D83F620214177BC0036FE28 /* Fontfabric - Intro Cond Thin Italic.ttf */,
+				4D83F621214177BC0036FE28 /* Fontfabric - Intro Cond Bold Alt.ttf */,
+				4D83F622214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf */,
+				4D83F623214177BC0036FE28 /* Fontfabric - Intro Bold Italic.ttf */,
+				4D83F624214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf */,
+				4D83F625214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf */,
+				4D83F626214177BC0036FE28 /* Fontfabric - Intro Regular Italic.ttf */,
+				4D83F627214177BC0036FE28 /* Fontfabric - Intro Cond Thin Alt.ttf */,
+				4D83F628214177BC0036FE28 /* Fontfabric - Intro Cond Light Caps.ttf */,
+				4D83F629214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Caps.ttf */,
+				4D83F62A214177BC0036FE28 /* Fontfabric - Intro SemiBold Caps.ttf */,
+				4D83F62B214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf */,
+				4D83F62C214177BC0036FE28 /* Fontfabric - Intro Thin Caps.ttf */,
+				4D83F62D214177BC0036FE28 /* Fontfabric - Intro Thin Alt.ttf */,
+				4D83F62E214177BC0036FE28 /* Fontfabric - Intro Black.ttf */,
+				4D83F62F214177BC0036FE28 /* Fontfabric - Intro Cond Black.ttf */,
+				4D83F630214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf */,
+				4D83F631214177BC0036FE28 /* Fontfabric - Intro Cond Bold Caps.ttf */,
+				4D83F632214177BC0036FE28 /* Fontfabric - Intro Cond Thin.ttf */,
+				4D83F633214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf */,
+				4D83F634214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf */,
+				4D83F635214177BC0036FE28 /* Fontfabric - Intro Black Inline.ttf */,
+				4D83F636214177BC0036FE28 /* Fontfabric - Intro Black Italic.ttf */,
+				4D83F637214177BC0036FE28 /* Fontfabric - Intro Cond Regular.ttf */,
+				4D83F638214177BC0036FE28 /* Fontfabric - Intro Cond Black Caps.ttf */,
+			);
+			path = "Alternative files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,11 +555,112 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D83F64E214177BC0036FE28 /* Fontfabric - IntroCondRegularCaps.otf in Resources */,
+				4D83F685214177BC0036FE28 /* Fontfabric - Intro Cond Thin Italic.ttf in Resources */,
+				4D83F681214177BC0036FE28 /* Fontfabric - Intro SemiBold.ttf in Resources */,
+				4D83F67E214177BC0036FE28 /* Fontfabric - Intro Light Caps.ttf in Resources */,
 				4D83F59E21414D3A0036FE28 /* LaunchScreen.storyboard in Resources */,
+				4D83F684214177BC0036FE28 /* Fontfabric - Intro Light Italic.ttf in Resources */,
+				4D83F664214177BC0036FE28 /* Fontfabric - IntroBlackAlt.otf in Resources */,
+				4D83F676214177BC0036FE28 /* Fontfabric - Intro Regular Caps.ttf in Resources */,
+				4D83F642214177BC0036FE28 /* Fontfabric - IntroCondThinItalic.otf in Resources */,
+				4D83F670214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf in Resources */,
+				4D83F699214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf in Resources */,
+				4D83F68A214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf in Resources */,
+				4D83F66B214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf in Resources */,
+				4D83F663214177BC0036FE28 /* Fontfabric - IntroBold.otf in Resources */,
+				4D83F693214177BC0036FE28 /* Fontfabric - Intro Black.ttf in Resources */,
+				4D83F688214177BC0036FE28 /* Fontfabric - Intro Bold Italic.ttf in Resources */,
+				4D83F648214177BC0036FE28 /* Fontfabric - IntroCondThinCaps.otf in Resources */,
+				4D83F68F214177BC0036FE28 /* Fontfabric - Intro SemiBold Caps.ttf in Resources */,
+				4D83F667214177BC0036FE28 /* Fontfabric - IntroSemiBoldAlt.otf in Resources */,
+				4D83F662214177BC0036FE28 /* Fontfabric - IntroBlackItalic.otf in Resources */,
+				4D83F6A4214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf in Resources */,
+				4D83F692214177BC0036FE28 /* Fontfabric - Intro Thin Alt.ttf in Resources */,
 				4D83F5B421414DE10036FE28 /* Round1.csv in Resources */,
+				4D83F666214177BC0036FE28 /* Fontfabric - IntroCondBlackItalic.otf in Resources */,
+				4D83F66D214177BC0036FE28 /* Fontfabric - Intro Thin Italic.ttf in Resources */,
+				4D83F68E214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Caps.ttf in Resources */,
+				4D83F675214177BC0036FE28 /* Fontfabric - Intro Cond Light Alt.ttf in Resources */,
 				4D83F59B21414D3A0036FE28 /* Assets.xcassets in Resources */,
+				4D83F67D214177BC0036FE28 /* Fontfabric - Intro Black Alt.ttf in Resources */,
+				4D83F671214177BC0036FE28 /* Fontfabric - Intro Cond Light Italic.ttf in Resources */,
+				4D83F697214177BC0036FE28 /* Fontfabric - Intro Cond Thin.ttf in Resources */,
+				4D83F646214177BC0036FE28 /* Fontfabric - IntroBlack.otf in Resources */,
+				4D83F68D214177BC0036FE28 /* Fontfabric - Intro Cond Light Caps.ttf in Resources */,
+				4D83F691214177BC0036FE28 /* Fontfabric - Intro Thin Caps.ttf in Resources */,
+				4D83F674214177BC0036FE28 /* Fontfabric - Intro Cond Light.ttf in Resources */,
+				4D83F677214177BC0036FE28 /* Fontfabric - Intro Light.ttf in Resources */,
+				4D83F655214177BC0036FE28 /* Fontfabric - IntroBlackCaps.otf in Resources */,
+				4D83F683214177BC0036FE28 /* Fontfabric - Intro Cond Regular Caps.ttf in Resources */,
+				4D83F66F214177BC0036FE28 /* Fontfabric - Intro Cond Regular Italic.ttf in Resources */,
+				4D83F672214177BC0036FE28 /* Fontfabric - Intro Black Caps.ttf in Resources */,
+				4D83F668214177BC0036FE28 /* Fontfabric - IntroRegularItalic.otf in Resources */,
+				4D83F66A214177BC0036FE28 /* Fontfabric - IntroBoldItalic.otf in Resources */,
+				4D83F67A214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Alt.ttf in Resources */,
+				4D83F69F214177BC0036FE28 /* Fontfabric - IntroSemiBoldItalic.otf in Resources */,
+				4D83F653214177BC0036FE28 /* Fontfabric - IntroLightAlt.otf in Resources */,
+				4D83F67B214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold.ttf in Resources */,
+				4D83F69C214177BC0036FE28 /* Fontfabric - Intro Cond Regular.ttf in Resources */,
+				4D83F682214177BC0036FE28 /* Fontfabric - Intro Regular.ttf in Resources */,
+				4D83F66C214177BC0036FE28 /* Fontfabric - Intro Thin.ttf in Resources */,
+				4D83F64F214177BC0036FE28 /* Fontfabric - IntroRegularAlt.otf in Resources */,
+				4D83F643214177BC0036FE28 /* Fontfabric - IntroCondRegularItalic.otf in Resources */,
 				4D83F59921414D380036FE28 /* Main.storyboard in Resources */,
+				4D83F69D214177BC0036FE28 /* Fontfabric - Intro Cond Black Caps.ttf in Resources */,
+				4D83F64D214177BC0036FE28 /* Fontfabric - IntroRegularCaps.otf in Resources */,
+				4D83F650214177BC0036FE28 /* Fontfabric - IntroCondBoldAlt.otf in Resources */,
+				4D83F65F214177BC0036FE28 /* Fontfabric - IntroCondBold.otf in Resources */,
+				4D83F6A1214177BC0036FE28 /* Fontfabric - IntroCondSemiBold.otf in Resources */,
+				4D83F64B214177BC0036FE28 /* Fontfabric - IntroCondBlackAlt.otf in Resources */,
+				4D83F65E214177BC0036FE28 /* Fontfabric - IntroRegular.otf in Resources */,
+				4D83F689214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf in Resources */,
+				4D83F665214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldAlt.otf in Resources */,
+				4D83F65D214177BC0036FE28 /* Fontfabric - IntroCondThin.otf in Resources */,
+				4D83F656214177BC0036FE28 /* Fontfabric - IntroBoldAlt.otf in Resources */,
+				4D83F65B214177BC0036FE28 /* Fontfabric - IntroCondBlackCaps.otf in Resources */,
+				4D83F657214177BC0036FE28 /* Fontfabric - IntroThinAlt.otf in Resources */,
+				4D83F649214177BC0036FE28 /* Fontfabric Standard Font License.html in Resources */,
+				4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */,
 				4D83F5B721414E6C0036FE28 /* PanelView.xib in Resources */,
+				4D83F6A3214177BC0036FE28 /* Fontfabric - IntroThinItalic.otf in Resources */,
+				4D83F661214177BC0036FE28 /* Fontfabric - IntroBlackInline.otf in Resources */,
+				4D83F690214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf in Resources */,
+				4D83F687214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf in Resources */,
+				4D83F698214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf in Resources */,
+				4D83F673214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf in Resources */,
+				4D83F64C214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf in Resources */,
+				4D83F695214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf in Resources */,
+				4D83F67C214177BC0036FE28 /* Fontfabric - Intro Bold.ttf in Resources */,
+				4D83F651214177BC0036FE28 /* Fontfabric - IntroCondThinAlt.otf in Resources */,
+				4D83F659214177BC0036FE28 /* Fontfabric - IntroCondRegular.otf in Resources */,
+				4D83F6A0214177BC0036FE28 /* Fontfabric - IntroLightItalic.otf in Resources */,
+				4D83F660214177BC0036FE28 /* Fontfabric - IntroThinCaps.otf in Resources */,
+				4D83F64A214177BC0036FE28 /* Fontfabric - IntroCondLightCaps.otf in Resources */,
+				4D83F680214177BC0036FE28 /* Fontfabric - Intro SemiBold Alt.ttf in Resources */,
+				4D83F679214177BC0036FE28 /* Fontfabric - Intro Cond Regular Alt.ttf in Resources */,
+				4D83F6A2214177BC0036FE28 /* Fontfabric - IntroCondLightItalic.otf in Resources */,
+				4D83F652214177BC0036FE28 /* Fontfabric - IntroSemiBoldCaps.otf in Resources */,
+				4D83F647214177BC0036FE28 /* Fontfabric - IntroCondLight.otf in Resources */,
+				4D83F658214177BC0036FE28 /* Fontfabric - IntroBoldCaps.otf in Resources */,
+				4D83F65C214177BC0036FE28 /* Fontfabric - IntroThin.otf in Resources */,
+				4D83F66E214177BC0036FE28 /* Fontfabric - Intro Black Inline Caps.ttf in Resources */,
+				4D83F67F214177BC0036FE28 /* Fontfabric - Intro Regular Alt.ttf in Resources */,
+				4D83F69E214177BC0036FE28 /* Fontfabric - IntroLightCaps.otf in Resources */,
+				4D83F678214177BC0036FE28 /* Fontfabric - Intro Bold Caps.ttf in Resources */,
+				4D83F669214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldCaps.otf in Resources */,
+				4D83F645214177BC0036FE28 /* Fontfabric - IntroCondBoldItalic.otf in Resources */,
+				4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */,
+				4D83F65A214177BC0036FE28 /* Fontfabric - IntroCondRegularAlt.otf in Resources */,
+				4D83F69A214177BC0036FE28 /* Fontfabric - Intro Black Inline.ttf in Resources */,
+				4D83F686214177BC0036FE28 /* Fontfabric - Intro Cond Bold Alt.ttf in Resources */,
+				4D83F68B214177BC0036FE28 /* Fontfabric - Intro Regular Italic.ttf in Resources */,
+				4D83F654214177BC0036FE28 /* Fontfabric - IntroBlackInlineCaps.otf in Resources */,
+				4D83F696214177BC0036FE28 /* Fontfabric - Intro Cond Bold Caps.ttf in Resources */,
+				4D83F69B214177BC0036FE28 /* Fontfabric - Intro Black Italic.ttf in Resources */,
+				4D83F644214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldItalic.otf in Resources */,
+				4D83F68C214177BC0036FE28 /* Fontfabric - Intro Cond Thin Alt.ttf in Resources */,
+				4D83F694214177BC0036FE28 /* Fontfabric - Intro Cond Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
