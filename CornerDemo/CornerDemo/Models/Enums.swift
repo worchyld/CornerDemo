@@ -13,6 +13,16 @@ enum UnitSpeed : String {
     case g
 }
 
+enum FightState {
+    case rest
+    case fight
+}
+
+struct Constants {
+    public static let restTime : TimeInterval = 60.0 // 1 minute
+    public static let fightTime : TimeInterval = 180.0 // 3 minutes
+}
+
 /* Left hand punches: 0 - Jab, 1 - Hook, 2 - Uppercut */
 /* Right hand punches: 3 - Cross, 4 - Hook, 5 - Uppercut */
 

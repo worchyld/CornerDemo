@@ -23,7 +23,7 @@ class HandPunchTests: XCTestCase {
     }
     
     func testPunchType() {
-        let punch = 0
+        // if punch_type_id = 0
         // expect left hook
 
         
