@@ -13,6 +13,8 @@
 		4D83F59B21414D3A0036FE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F59A21414D3A0036FE28 /* Assets.xcassets */; };
 		4D83F59E21414D3A0036FE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F59C21414D3A0036FE28 /* LaunchScreen.storyboard */; };
 		4D83F5A921414D3A0036FE28 /* CornerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F5A821414D3A0036FE28 /* CornerDemoTests.swift */; };
+		4D83F5B421414DE10036FE28 /* Round1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5B321414DE10036FE28 /* Round1.csv */; };
+		4D83F5B721414E6C0036FE28 /* PanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F5B621414E6C0036FE28 /* PanelView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4D83F5A421414D3A0036FE28 /* CornerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CornerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D83F5A821414D3A0036FE28 /* CornerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerDemoTests.swift; sourceTree = "<group>"; };
 		4D83F5AA21414D3A0036FE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D83F5B321414DE10036FE28 /* Round1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Round1.csv; sourceTree = "<group>"; };
+		4D83F5B621414E6C0036FE28 /* PanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanelView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		4D83F59221414D380036FE28 /* CornerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D83F5B521414DE70036FE28 /* CSV */,
 				4D83F59321414D380036FE28 /* AppDelegate.swift */,
 				4D83F59521414D380036FE28 /* ViewController.swift */,
 				4D83F59721414D380036FE28 /* Main.storyboard */,
 				4D83F59A21414D3A0036FE28 /* Assets.xcassets */,
 				4D83F59C21414D3A0036FE28 /* LaunchScreen.storyboard */,
 				4D83F59F21414D3A0036FE28 /* Info.plist */,
+				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
 			);
 			path = CornerDemo;
 			sourceTree = "<group>";
@@ -94,6 +100,14 @@
 				4D83F5AA21414D3A0036FE28 /* Info.plist */,
 			);
 			path = CornerDemoTests;
+			sourceTree = "<group>";
+		};
+		4D83F5B521414DE70036FE28 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				4D83F5B321414DE10036FE28 /* Round1.csv */,
+			);
+			path = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D83F59E21414D3A0036FE28 /* LaunchScreen.storyboard in Resources */,
+				4D83F5B421414DE10036FE28 /* Round1.csv in Resources */,
 				4D83F59B21414D3A0036FE28 /* Assets.xcassets in Resources */,
 				4D83F59921414D380036FE28 /* Main.storyboard in Resources */,
+				4D83F5B721414E6C0036FE28 /* PanelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
