@@ -11,8 +11,7 @@ import Foundation
 class RoundData {
     static var instance = RoundData()
 
-    var rounds: [Round]?
-    var fightState: FightState = .rest
+    public private(set) var rounds: [Round]?
 
     init() {
         // pre-load rounds from CSV
