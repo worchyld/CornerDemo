@@ -30,21 +30,11 @@ enum HandError : Error {
     case unknownPunchType
 }
 
-public struct Hand {
-    struct Left {
-        enum Punch : Int {
-            case jab = 0
-            case hook = 1
-            case uppercut = 2
-        }
-    }
-    struct Right {
-        enum Punch : Int {
-            case cross = 3
-            case hook = 4
-            case uppercut = 5
-        }
-    }
-
-    
+enum PunchType : Int {
+    case leftJab = 0
+    case leftHook = 1
+    case leftUppercut = 2
+    case rightCross = 3
+    case rightHook = 4
+    case rightUpperCut = 5    
 }

@@ -23,10 +23,20 @@ class HandPunchTests: XCTestCase {
     }
     
     func testPunchType() {
-        // if punch_type_id = 0
-        // expect left hook
+        // if punch_type_id = 0, expect left hook
+        let punch_type_id = 0
+        XCTAssertEqual(PunchType(rawValue: punch_type_id), PunchType.leftJab)
+    }
 
-        
+    func testLeftHooks() {
+        // Expect 3 left jabs to be found
+        let punches = [0,0,0,1]
+
+        let results = (punches.filter({ (i: Int) -> Bool in
+            return (i == PunchType.leftJab.rawValue)
+        }).count)
+
+        XCTAssertTrue(results == 3)
     }
     
 }
