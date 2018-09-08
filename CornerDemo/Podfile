@@ -6,7 +6,7 @@ target 'CornerDemo' do
   use_frameworks!
 
   # Pods for CornerDemo
-  pod 'Graphs', '~> 0.1.2'
+  pod 'SwiftCharts', '~> 0.6.1'
   pod 'CSV.swift', '~> 2.2.1'
   pod 'FontBlaster'
 
