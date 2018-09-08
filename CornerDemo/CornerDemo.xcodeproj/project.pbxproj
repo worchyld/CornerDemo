@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		475BD049745679C7A0088514 /* Pods_CornerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3D17990703FFF490AF024 /* Pods_CornerDemo.framework */; };
+		4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80055E2143BE14002044E5 /* ToolbarView.swift */; };
+		4D8005612143BE49002044E5 /* ToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8005602143BE49002044E5 /* ToolbarView.xib */; };
+		4D8005672143D46F002044E5 /* MainPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8005662143D46F002044E5 /* MainPanelView.swift */; };
+		4D8005692143D813002044E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8005682143D813002044E5 /* Extensions.swift */; };
+		4D80056B2143D97A002044E5 /* MainPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D80056A2143D97A002044E5 /* MainPanelView.xib */; };
+		4D80056D2143DA7D002044E5 /* TempCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */; };
 		4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F59321414D380036FE28 /* AppDelegate.swift */; };
 		4D83F59621414D380036FE28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F59521414D380036FE28 /* ViewController.swift */; };
 		4D83F59921414D380036FE28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F59721414D380036FE28 /* Main.storyboard */; };
@@ -142,6 +148,12 @@
 /* Begin PBXFileReference section */
 		02E3D17990703FFF490AF024 /* Pods_CornerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CornerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B289F5B2D6D733F8886FB9 /* Pods-CornerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4D80055E2143BE14002044E5 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		4D8005602143BE49002044E5 /* ToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolbarView.xib; sourceTree = "<group>"; };
+		4D8005662143D46F002044E5 /* MainPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanelView.swift; sourceTree = "<group>"; };
+		4D8005682143D813002044E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4D80056A2143D97A002044E5 /* MainPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPanelView.xib; sourceTree = "<group>"; };
+		4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCollectionViewController.swift; sourceTree = "<group>"; };
 		4D83F59021414D380036FE28 /* CornerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D83F59321414D380036FE28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D83F59521414D380036FE28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -328,6 +340,7 @@
 				4D83F5B521414DE70036FE28 /* CSV */,
 				4D83F59321414D380036FE28 /* AppDelegate.swift */,
 				4D83F59521414D380036FE28 /* ViewController.swift */,
+				4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */,
 				4D83F59721414D380036FE28 /* Main.storyboard */,
 				4D83F59A21414D3A0036FE28 /* Assets.xcassets */,
 				4D83F59C21414D3A0036FE28 /* LaunchScreen.storyboard */,
@@ -364,6 +377,7 @@
 				4D83F5C421415B190036FE28 /* RoundData.swift */,
 				4D83F5C8214160C60036FE28 /* RoundViewModel.swift */,
 				4D83F5CA21416E0E0036FE28 /* HexColors.swift */,
+				4D8005682143D813002044E5 /* Extensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -371,10 +385,14 @@
 		4D83F5C1214158330036FE28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4D8005662143D46F002044E5 /* MainPanelView.swift */,
+				4D80056A2143D97A002044E5 /* MainPanelView.xib */,
 				4D83F5B8214156670036FE28 /* PanelView.swift */,
 				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
 				4DFE9BB72141A2AE00B57D2F /* Slide.swift */,
 				4DFE9BBC2141A2D600B57D2F /* Slide.xib */,
+				4D80055E2143BE14002044E5 /* ToolbarView.swift */,
+				4D8005602143BE49002044E5 /* ToolbarView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -654,6 +672,7 @@
 				4D83F650214177BC0036FE28 /* Fontfabric - IntroCondBoldAlt.otf in Resources */,
 				4D83F65F214177BC0036FE28 /* Fontfabric - IntroCondBold.otf in Resources */,
 				4D83F6A1214177BC0036FE28 /* Fontfabric - IntroCondSemiBold.otf in Resources */,
+				4D8005612143BE49002044E5 /* ToolbarView.xib in Resources */,
 				4D83F64B214177BC0036FE28 /* Fontfabric - IntroCondBlackAlt.otf in Resources */,
 				4D83F65E214177BC0036FE28 /* Fontfabric - IntroRegular.otf in Resources */,
 				4D83F689214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf in Resources */,
@@ -670,6 +689,7 @@
 				4D83F690214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf in Resources */,
 				4D83F687214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf in Resources */,
 				4D83F698214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf in Resources */,
+				4D80056B2143D97A002044E5 /* MainPanelView.xib in Resources */,
 				4D83F673214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf in Resources */,
 				4D83F64C214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf in Resources */,
 				4D83F695214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf in Resources */,
@@ -721,8 +741,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
@@ -730,8 +748,6 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
@@ -747,15 +763,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CornerDemo-checkManifestLockResult.txt",
 			);
@@ -769,15 +781,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CornerDemoTests-checkManifestLockResult.txt",
 			);
@@ -793,12 +801,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D80056D2143DA7D002044E5 /* TempCollectionViewController.swift in Sources */,
 				4D83F5B9214156670036FE28 /* PanelView.swift in Sources */,
 				4D83F5CB21416E0E0036FE28 /* HexColors.swift in Sources */,
 				4D83F5BF214157D20036FE28 /* Enums.swift in Sources */,
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
+				4D8005672143D46F002044E5 /* MainPanelView.swift in Sources */,
+				4D8005692143D813002044E5 /* Extensions.swift in Sources */,
+				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4DFE9BB82141A2AE00B57D2F /* Slide.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,

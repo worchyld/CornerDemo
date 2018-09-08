@@ -53,3 +53,13 @@ enum PunchType : Int {
     case rightHook = 4
     case rightUpperCut = 5    
 }
+
+
+/*
+ let formatter = DateComponentsFormatter()
+ formatter.unitsStyle = .positional
+ formatter.allowedUnits = [ .hour, .minute, .second, .nanosecond ]
+ formatter.zeroFormattingBehavior = [ .pad ]
+
+ let formatted = formatter.string(from: ts)
+*/

@@ -24,6 +24,6 @@ struct Round : CustomStringConvertible {
 
 extension Round {
     var description: String {
-        return ("Round: \(ts), \(punch_type_id), \(speed), \(power)\n")
+        return ("Round: \(String(describing: ts)), \(punch_type_id), \(speed), \(power)\n")
     }
 }
