@@ -14,6 +14,7 @@
 		4D8005692143D813002044E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8005682143D813002044E5 /* Extensions.swift */; };
 		4D80056B2143D97A002044E5 /* MainPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D80056A2143D97A002044E5 /* MainPanelView.xib */; };
 		4D80056D2143DA7D002044E5 /* TempCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */; };
+		4D80057421440A27002044E5 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80057321440A27002044E5 /* XibView.swift */; };
 		4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F59321414D380036FE28 /* AppDelegate.swift */; };
 		4D83F59621414D380036FE28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F59521414D380036FE28 /* ViewController.swift */; };
 		4D83F59921414D380036FE28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F59721414D380036FE28 /* Main.storyboard */; };
@@ -154,6 +155,7 @@
 		4D8005682143D813002044E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4D80056A2143D97A002044E5 /* MainPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPanelView.xib; sourceTree = "<group>"; };
 		4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCollectionViewController.swift; sourceTree = "<group>"; };
+		4D80057321440A27002044E5 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		4D83F59021414D380036FE28 /* CornerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D83F59321414D380036FE28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D83F59521414D380036FE28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				4DFE9BBC2141A2D600B57D2F /* Slide.xib */,
 				4D80055E2143BE14002044E5 /* ToolbarView.swift */,
 				4D8005602143BE49002044E5 /* ToolbarView.xib */,
+				4D80057321440A27002044E5 /* XibView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -809,6 +812,7 @@
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
 				4D8005672143D46F002044E5 /* MainPanelView.swift in Sources */,
+				4D80057421440A27002044E5 /* XibView.swift in Sources */,
 				4D8005692143D813002044E5 /* Extensions.swift in Sources */,
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4DFE9BB82141A2AE00B57D2F /* Slide.swift in Sources */,
