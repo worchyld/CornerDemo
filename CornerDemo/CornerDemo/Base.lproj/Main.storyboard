@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fr2-yA-dFB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,11 +18,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5z0-Bi-7mt">
+                                <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaE-wz-biG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="533"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vaE-wz-biG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AGU-ro-Nee"/>
+                            <constraint firstItem="5z0-Bi-7mt" firstAttribute="top" secondItem="vaE-wz-biG" secondAttribute="bottom" constant="3" id="FJG-A8-4IC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vaE-wz-biG" secondAttribute="bottom" constant="70" id="GTh-Zf-Sdm"/>
+                            <constraint firstItem="5z0-Bi-7mt" firstAttribute="top" secondItem="vaE-wz-biG" secondAttribute="bottom" constant="3" id="Sqg-L3-CI9"/>
+                            <constraint firstItem="vaE-wz-biG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="VBT-w5-Xsn"/>
+                            <constraint firstItem="5z0-Bi-7mt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="btH-dm-A40"/>
+                            <constraint firstItem="5z0-Bi-7mt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gmp-45-xZt"/>
+                            <constraint firstItem="vaE-wz-biG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rMu-H2-ahw"/>
+                            <constraint firstItem="5z0-Bi-7mt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zbE-va-ZWw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WuT-NE-i5h">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="9W9-lu-QRK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5mD-Cq-le7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fr2-yA-dFB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gaR-Ru-7R4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jUJ-7L-Ate"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPL-gQ-3Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>

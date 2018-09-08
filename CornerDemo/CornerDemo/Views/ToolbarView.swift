@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ToolbarView: UIView {
+@IBDesignable
+class ToolbarView: UIView, NibLoadable {
 
     @IBOutlet weak var progressView : UIProgressView!
     @IBOutlet weak var playBtn: UIButton!
@@ -18,5 +19,15 @@ class ToolbarView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupFromNib()
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupFromNib()
     }
 }
