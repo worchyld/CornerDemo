@@ -19,4 +19,20 @@ class ToolbarView: UIView {
         super.awakeFromNib()
         self.layoutIfNeeded()
     }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        xibSetup()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        xibSetup()
+    }
+
+    @IBAction func playBtnDidPress(_ sender: Any) {
+        print ("pressed")
+        // #TO-DO: notify subscribers
+    }
 }

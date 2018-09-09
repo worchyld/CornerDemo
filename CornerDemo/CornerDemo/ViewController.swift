@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
 
-
+    /*
     lazy var toolbarView : UIView = {
 
         let height: CGFloat = CGFloat(65.0)
@@ -19,9 +19,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let frame = CGRect(x: 0, y: posY, width: width, height: height)
         let tb = UIView(frame: frame)
 
+//        let tb = Bundle.main.loadNibNamed("ToolbarView", owner: nil, options: nil)?.first as! ToolbarView
         tb.backgroundColor = .red
+
         return tb
-    }()
+    }()*/
 
     weak var viewModel: RoundViewModel?
 
@@ -33,7 +35,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
     private func setupView() {
         self.view.backgroundColor = UIColor( Constants.Colours.bgColor )
-        self.view.addSubview(toolbarView)
+        //self.view.addSubview(toolbarView)
     }
 
     override func didReceiveMemoryWarning() {
