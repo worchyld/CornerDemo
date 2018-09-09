@@ -10,9 +10,7 @@
 		475BD049745679C7A0088514 /* Pods_CornerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3D17990703FFF490AF024 /* Pods_CornerDemo.framework */; };
 		4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80055E2143BE14002044E5 /* ToolbarView.swift */; };
 		4D8005612143BE49002044E5 /* ToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8005602143BE49002044E5 /* ToolbarView.xib */; };
-		4D8005672143D46F002044E5 /* MainPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8005662143D46F002044E5 /* MainPanelView.swift */; };
 		4D8005692143D813002044E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8005682143D813002044E5 /* Extensions.swift */; };
-		4D80056B2143D97A002044E5 /* MainPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D80056A2143D97A002044E5 /* MainPanelView.xib */; };
 		4D80056D2143DA7D002044E5 /* TempCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */; };
 		4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F59321414D380036FE28 /* AppDelegate.swift */; };
 		4D83F59621414D380036FE28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D83F59521414D380036FE28 /* ViewController.swift */; };
@@ -130,8 +128,7 @@
 		4D83F6A4214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */; };
 		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
-		4DFE9BB82141A2AE00B57D2F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE9BB72141A2AE00B57D2F /* Slide.swift */; };
-		4DFE9BBD2141A2D600B57D2F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DFE9BBC2141A2D600B57D2F /* Slide.xib */; };
+		4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F1682144FA2A00C31B27 /* GraphView.swift */; };
 		F99BDF833B83CE94E35F68DD /* Pods_CornerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50152E38998B8BF4533CD5D /* Pods_CornerDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,9 +147,7 @@
 		43B289F5B2D6D733F8886FB9 /* Pods-CornerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4D80055E2143BE14002044E5 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		4D8005602143BE49002044E5 /* ToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolbarView.xib; sourceTree = "<group>"; };
-		4D8005662143D46F002044E5 /* MainPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanelView.swift; sourceTree = "<group>"; };
 		4D8005682143D813002044E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		4D80056A2143D97A002044E5 /* MainPanelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainPanelView.xib; sourceTree = "<group>"; };
 		4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCollectionViewController.swift; sourceTree = "<group>"; };
 		4D83F59021414D380036FE28 /* CornerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D83F59321414D380036FE28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -274,8 +269,7 @@
 		4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldCaps.otf"; sourceTree = "<group>"; };
 		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
-		4DFE9BB72141A2AE00B57D2F /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		4DFE9BBC2141A2D600B57D2F /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		4DE0F1682144FA2A00C31B27 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		74358576FD31B1B6E7057895 /* Pods-CornerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemoTests/Pods-CornerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DFB2CD3702892B0C03D0900 /* Pods-CornerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9AD58BB7336BE2621B6375A6 /* Pods-CornerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemoTests/Pods-CornerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -340,11 +334,11 @@
 				4D83F5B521414DE70036FE28 /* CSV */,
 				4D83F59321414D380036FE28 /* AppDelegate.swift */,
 				4D83F59521414D380036FE28 /* ViewController.swift */,
-				4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */,
 				4D83F59721414D380036FE28 /* Main.storyboard */,
 				4D83F59A21414D3A0036FE28 /* Assets.xcassets */,
 				4D83F59C21414D3A0036FE28 /* LaunchScreen.storyboard */,
 				4D83F59F21414D3A0036FE28 /* Info.plist */,
+				4D80056C2143DA7D002044E5 /* TempCollectionViewController.swift */,
 				4D83F5C1214158330036FE28 /* Views */,
 				4D83F5C0214158260036FE28 /* Models */,
 			);
@@ -385,14 +379,11 @@
 		4D83F5C1214158330036FE28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4D8005662143D46F002044E5 /* MainPanelView.swift */,
-				4D80056A2143D97A002044E5 /* MainPanelView.xib */,
 				4D83F5B8214156670036FE28 /* PanelView.swift */,
 				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
-				4DFE9BB72141A2AE00B57D2F /* Slide.swift */,
-				4DFE9BBC2141A2D600B57D2F /* Slide.xib */,
 				4D80055E2143BE14002044E5 /* ToolbarView.swift */,
 				4D8005602143BE49002044E5 /* ToolbarView.xib */,
+				4DE0F1682144FA2A00C31B27 /* GraphView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -626,7 +617,6 @@
 				4D83F670214177BC0036FE28 /* Fontfabric - Intro Bold Alt.ttf in Resources */,
 				4D83F699214177BC0036FE28 /* Fontfabric - Intro Cond SemiBold Italic.ttf in Resources */,
 				4D83F68A214177BC0036FE28 /* Fontfabric - Intro Cond Black Italic.ttf in Resources */,
-				4DFE9BBD2141A2D600B57D2F /* Slide.xib in Resources */,
 				4D83F66B214177BC0036FE28 /* Fontfabric - IntroCondBlack.otf in Resources */,
 				4D83F663214177BC0036FE28 /* Fontfabric - IntroBold.otf in Resources */,
 				4D83F693214177BC0036FE28 /* Fontfabric - Intro Black.ttf in Resources */,
@@ -689,7 +679,6 @@
 				4D83F690214177BC0036FE28 /* Fontfabric - Intro SemiBold Italic.ttf in Resources */,
 				4D83F687214177BC0036FE28 /* Fontfabric - Intro Cond Thin Caps.ttf in Resources */,
 				4D83F698214177BC0036FE28 /* Fontfabric - Intro Light Alt.ttf in Resources */,
-				4D80056B2143D97A002044E5 /* MainPanelView.xib in Resources */,
 				4D83F673214177BC0036FE28 /* Fontfabric - Intro Cond Bold Italic.ttf in Resources */,
 				4D83F64C214177BC0036FE28 /* Fontfabric - IntroSemiBold.otf in Resources */,
 				4D83F695214177BC0036FE28 /* Fontfabric - Intro Cond Bold.ttf in Resources */,
@@ -808,10 +797,9 @@
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
-				4D8005672143D46F002044E5 /* MainPanelView.swift in Sources */,
 				4D8005692143D813002044E5 /* Extensions.swift in Sources */,
+				4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */,
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
-				4DFE9BB82141A2AE00B57D2F /* Slide.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,
 			);
