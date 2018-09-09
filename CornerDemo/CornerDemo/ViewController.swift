@@ -15,17 +15,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     lazy var graphView: GraphView = {
         return GraphView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150))
     }()
+//    lazy var slideCollectionView: SlideCollectionView = {
+//        return SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 125))
+//    }()
 
-    weak var viewModel: RoundViewModel?
+    var viewModel: RoundViewModel!
     @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel = RoundViewModel(withRound: 1)
         setupView()
     }
 
     private func setupView() {
+        self.title = self.viewModel.pageTitle
         self.view.backgroundColor = UIColor( Constants.Colours.bgColor )
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
@@ -49,8 +53,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
         // Configure the cell
-        if (indexPath.row == 0) {
+        switch indexPath.row {
+        case 0:
             cell.addSubview(graphView)
+            break
+
+        case 1:
+            break
+
+        case 2:
+            //cell.addSubview(slideCollectionView)
+            break
+
+        default:
+            break
         }
 
         return cell

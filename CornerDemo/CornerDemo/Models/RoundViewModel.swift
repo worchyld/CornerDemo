@@ -12,9 +12,11 @@ import Foundation
 class RoundViewModel {
     var pageTitle: String
     var roundData: RoundData
+    var roundNumber: Int
 
-    init() {
-        self.pageTitle = NSLocalizedString("Round 2", comment: "Page title")
-        self.roundData = RoundData()        
+    init(withRound round:Int = 1) {
+        self.roundNumber = round
+        self.pageTitle = NSLocalizedString("pageTitle", tableName: nil, bundle: Bundle.main, value: "Round \(roundNumber)", comment: "Page title")
+        self.roundData = RoundData()
     }
 }

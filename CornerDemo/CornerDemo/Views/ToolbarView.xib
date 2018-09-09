@@ -46,6 +46,7 @@
                         <constraint firstAttribute="width" constant="34" id="oQo-TK-Jec"/>
                     </constraints>
                     <state key="normal" image="play"/>
+                    <state key="selected" image="pause"/>
                     <connections>
                         <action selector="playBtnDidPress:" destination="-1" eventType="touchUpInside" id="OvG-fK-3I7"/>
                     </connections>
@@ -73,6 +74,7 @@
         </view>
     </objects>
     <resources>
+        <image name="pause" width="135" height="135"/>
         <image name="play" width="135" height="135"/>
     </resources>
 </document>

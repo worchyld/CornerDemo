@@ -34,6 +34,11 @@ class ToolbarView: UIView {
 
     @IBAction func playBtnDidPress(_ sender: Any) {
         print ("pressed")
+        togglePlayButtonSelectionState()
         // #TO-DO: notify subscribers
+    }
+
+    private func togglePlayButtonSelectionState() {
+        playBtn.isSelected = !playBtn.isSelected
     }
 }
