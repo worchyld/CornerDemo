@@ -11,3 +11,14 @@ Demo app for a job application
 * play by David from the Noun Project
 
 * pause by amantaka from the Noun Project
+
+
+# Notes
+
+Uses cocopods, and to add run:
+
+`pod install`
+
+on your terminal in the project folder.
+
+Please note, `SwiftCharts` will present 4 warnings regarding depreciated `flatMap`.
