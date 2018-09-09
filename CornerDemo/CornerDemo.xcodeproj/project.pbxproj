@@ -129,6 +129,10 @@
 		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
 		4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F1682144FA2A00C31B27 /* GraphView.swift */; };
+		4DE0F16D2145024700C31B27 /* SlideOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16C2145024700C31B27 /* SlideOne.swift */; };
+		4DE0F16F2145025600C31B27 /* SlideTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16E2145025600C31B27 /* SlideTwo.swift */; };
+		4DE0F171214502A900C31B27 /* SlideOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0F170214502A900C31B27 /* SlideOneView.xib */; };
+		4DE0F1732145032400C31B27 /* SlideTwoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0F1722145032400C31B27 /* SlideTwoView.xib */; };
 		F99BDF833B83CE94E35F68DD /* Pods_CornerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50152E38998B8BF4533CD5D /* Pods_CornerDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -270,6 +274,10 @@
 		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
 		4DE0F1682144FA2A00C31B27 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		4DE0F16C2145024700C31B27 /* SlideOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOne.swift; sourceTree = "<group>"; };
+		4DE0F16E2145025600C31B27 /* SlideTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTwo.swift; sourceTree = "<group>"; };
+		4DE0F170214502A900C31B27 /* SlideOneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideOneView.xib; sourceTree = "<group>"; };
+		4DE0F1722145032400C31B27 /* SlideTwoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideTwoView.xib; sourceTree = "<group>"; };
 		74358576FD31B1B6E7057895 /* Pods-CornerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemoTests/Pods-CornerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DFB2CD3702892B0C03D0900 /* Pods-CornerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9AD58BB7336BE2621B6375A6 /* Pods-CornerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemoTests/Pods-CornerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -384,6 +392,10 @@
 				4D80055E2143BE14002044E5 /* ToolbarView.swift */,
 				4D8005602143BE49002044E5 /* ToolbarView.xib */,
 				4DE0F1682144FA2A00C31B27 /* GraphView.swift */,
+				4DE0F16C2145024700C31B27 /* SlideOne.swift */,
+				4DE0F170214502A900C31B27 /* SlideOneView.xib */,
+				4DE0F16E2145025600C31B27 /* SlideTwo.swift */,
+				4DE0F1722145032400C31B27 /* SlideTwoView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -668,6 +680,7 @@
 				4D83F689214177BC0036FE28 /* Fontfabric - Intro Cond Black Alt.ttf in Resources */,
 				4D83F665214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldAlt.otf in Resources */,
 				4D83F65D214177BC0036FE28 /* Fontfabric - IntroCondThin.otf in Resources */,
+				4DE0F171214502A900C31B27 /* SlideOneView.xib in Resources */,
 				4D83F656214177BC0036FE28 /* Fontfabric - IntroBoldAlt.otf in Resources */,
 				4D83F65B214177BC0036FE28 /* Fontfabric - IntroCondBlackCaps.otf in Resources */,
 				4D83F657214177BC0036FE28 /* Fontfabric - IntroThinAlt.otf in Resources */,
@@ -701,6 +714,7 @@
 				4D83F678214177BC0036FE28 /* Fontfabric - Intro Bold Caps.ttf in Resources */,
 				4D83F669214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldCaps.otf in Resources */,
 				4D83F645214177BC0036FE28 /* Fontfabric - IntroCondBoldItalic.otf in Resources */,
+				4DE0F1732145032400C31B27 /* SlideTwoView.xib in Resources */,
 				4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */,
 				4D83F65A214177BC0036FE28 /* Fontfabric - IntroCondRegularAlt.otf in Resources */,
 				4D83F69A214177BC0036FE28 /* Fontfabric - Intro Black Inline.ttf in Resources */,
@@ -796,9 +810,11 @@
 				4D83F5BF214157D20036FE28 /* Enums.swift in Sources */,
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
+				4DE0F16D2145024700C31B27 /* SlideOne.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
 				4D8005692143D813002044E5 /* Extensions.swift in Sources */,
 				4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */,
+				4DE0F16F2145025600C31B27 /* SlideTwo.swift in Sources */,
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,
