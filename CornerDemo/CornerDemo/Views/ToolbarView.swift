@@ -14,6 +14,7 @@ class ToolbarView: UIView {
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var lblDuration: UILabel!
     @IBOutlet weak var lblRest: UILabel!
+    @IBOutlet var labelCollection: [UILabel]!
 
     override func awakeFromNib() {
         super.awakeFromNib()
