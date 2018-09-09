@@ -128,6 +128,7 @@
 		4D83F6A4214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */; };
 		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
+		4DC3E0FA2145CEEE00017F50 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */; };
 		4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F1682144FA2A00C31B27 /* GraphView.swift */; };
 		4DE0F16D2145024700C31B27 /* SlideOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16C2145024700C31B27 /* SlideOne.swift */; };
 		4DE0F16F2145025600C31B27 /* SlideTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16E2145025600C31B27 /* SlideTwo.swift */; };
@@ -275,6 +276,7 @@
 		4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldCaps.otf"; sourceTree = "<group>"; };
 		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
+		4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		4DE0F1682144FA2A00C31B27 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		4DE0F16C2145024700C31B27 /* SlideOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOne.swift; sourceTree = "<group>"; };
 		4DE0F16E2145025600C31B27 /* SlideTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTwo.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				4D83F5B521414DE70036FE28 /* CSV */,
 				4D83F59321414D380036FE28 /* AppDelegate.swift */,
 				4D83F59521414D380036FE28 /* ViewController.swift */,
+				4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */,
 				4D83F59721414D380036FE28 /* Main.storyboard */,
 				4D83F59A21414D3A0036FE28 /* Assets.xcassets */,
 				4D83F59C21414D3A0036FE28 /* LaunchScreen.storyboard */,
@@ -755,12 +758,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
 				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -818,6 +823,7 @@
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
 				4DE0F16D2145024700C31B27 /* SlideOne.swift in Sources */,
+				4DC3E0FA2145CEEE00017F50 /* SideMenuTableViewController.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
 				4DE0F177214506D700C31B27 /* SlideCollectionView.swift in Sources */,
 				4D8005692143D813002044E5 /* Extensions.swift in Sources */,
