@@ -12,21 +12,6 @@ private let reuseIdentifier = "CellId"
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
 
-    /*
-    lazy var toolbarView : UIView = {
-
-        let height: CGFloat = CGFloat(65.0)
-        let posY = (self.view.bounds.maxY - height)
-        let width = self.view.bounds.width
-        let frame = CGRect(x: 0, y: posY, width: width, height: height)
-        let tb = UIView(frame: frame)
-
-//        let tb = Bundle.main.loadNibNamed("ToolbarView", owner: nil, options: nil)?.first as! ToolbarView
-        tb.backgroundColor = .red
-
-        return tb
-    }()*/
-
     lazy var graphView: GraphView = {
         return GraphView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150))
     }()
