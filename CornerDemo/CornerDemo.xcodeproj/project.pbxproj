@@ -128,6 +128,7 @@
 		4D83F6A4214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */; };
 		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
+		4DB5C6632147027400B71535 /* ObjectCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5C6622147027400B71535 /* ObjectCache.swift */; };
 		4DC3E0FA2145CEEE00017F50 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */; };
 		4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F1682144FA2A00C31B27 /* GraphView.swift */; };
 		4DE0F16D2145024700C31B27 /* SlideOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16C2145024700C31B27 /* SlideOneView.swift */; };
@@ -275,6 +276,7 @@
 		4D83F63F214177BC0036FE28 /* Fontfabric - IntroCondBoldCaps.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondBoldCaps.otf"; sourceTree = "<group>"; };
 		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
+		4DB5C6622147027400B71535 /* ObjectCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCache.swift; sourceTree = "<group>"; };
 		4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		4DE0F1682144FA2A00C31B27 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		4DE0F16C2145024700C31B27 /* SlideOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOneView.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				4D83F5C8214160C60036FE28 /* RoundViewModel.swift */,
 				4D83F5CA21416E0E0036FE28 /* HexColors.swift */,
 				4D8005682143D813002044E5 /* Extensions.swift */,
+				4DB5C6622147027400B71535 /* ObjectCache.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */,
 				4D77714D2146BF9300B9C26F /* PanelCollectionView.swift in Sources */,
 				4DE0F16F2145025600C31B27 /* SlideTwoView.swift in Sources */,
+				4DB5C6632147027400B71535 /* ObjectCache.swift in Sources */,
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,
