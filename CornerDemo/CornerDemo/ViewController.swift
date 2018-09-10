@@ -14,13 +14,16 @@ private let reuseIdentifier = "CellId"
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
 
-    lazy var graphView: GraphView = {
+    private lazy var graphView: GraphView = {
         return GraphView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150))
     }()
-    lazy var slideCollectionView: SlideCollectionView = {
-        let view = SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 135))
-        view.layer.borderColor = UIColor.red.cgColor
-        view.layer.borderWidth = 1
+    private lazy var panelCollectionView: PanelCollectionView = {
+        let view = PanelCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height:155))
+        return view
+    }()
+
+    private lazy var slideCollectionView: SlideCollectionView = {
+        let view = SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height:150))
         return view
     }()
 
@@ -37,6 +40,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         self.title = self.viewModel.pageTitle
         self.view.backgroundColor = UIColor( Constants.Colours.bgColor )
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 
         // Define the menus
          let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
@@ -68,6 +72,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             break
 
         case 1:
+            cell.addSubview(panelCollectionView)
             break
 
         case 2:
@@ -82,23 +87,5 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
 }
 
-extension ViewController: UISideMenuNavigationControllerDelegate {
 
-    func sideMenuWillAppear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appearing! (animated: \(animated))")
-    }
-
-    func sideMenuDidAppear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Appeared! (animated: \(animated))")
-    }
-
-    func sideMenuWillDisappear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappearing! (animated: \(animated))")
-    }
-
-    func sideMenuDidDisappear(menu: UISideMenuNavigationController, animated: Bool) {
-        print("SideMenu Disappeared! (animated: \(animated))")
-    }
-
-}
 

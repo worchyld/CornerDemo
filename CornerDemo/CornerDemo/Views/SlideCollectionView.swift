@@ -14,7 +14,7 @@ class SlideCollectionView: UIView, UICollectionViewDelegate,
 UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     private lazy var cellWidth: CGFloat = self.frame.width
-    private lazy var cellHeight: CGFloat = self.frame.height
+    private lazy var cellHeight: CGFloat = 120
 
     private lazy var flowLayout : UICollectionViewFlowLayout = {
         let f = UICollectionViewFlowLayout()
@@ -25,6 +25,14 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         return f
     }()
 
+    private lazy var pageControl : UIPageControl = {
+        let frame = CGRect(x: self.center.x - 50, y: self.frame.height-15, width: 50, height: 15)
+        let pc = UIPageControl(frame: frame)
+        pc.currentPage = 1
+        pc.numberOfPages = 2
+        pc.tintColor = .white
+        return pc
+    }()
 
     private lazy var collectionView : UICollectionView = {
         let cv = UICollectionView.init(frame: self.frame, collectionViewLayout: flowLayout)
@@ -33,22 +41,13 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         cv.dataSource = self
         cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         cv.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        cv.isPagingEnabled = true
         return cv
     }()
 
-    private lazy var pageControl : UIPageControl = {
-        let xPos: Int = Int(round(frame.height - 36)) as Int
-        let yPos: Int = Int(round(self.frame.width/2)) as Int
-        let pcFrame = CGRect(x: xPos, y: yPos, width: 100, height: 36)
-        let pc = UIPageControl(frame: frame)
-        pc.currentPage = 1
-        pc.numberOfPages = 2
-        pc.tintColor = .blue
-        return pc
-    }()
 
     private lazy var slides:[UIView] = {
-        let frame = CGRect(x: 0, y: 0, width: cellWidth, height: cellHeight)
+        let frame = CGRect(x: 0, y: 0, width: cellWidth , height: cellHeight)
         let slideOne : UIView = SlideOneView(frame: frame)
         let slideTwo : UIView = SlideTwoView(frame: frame)
 
@@ -63,9 +62,9 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .blue
         self.addSubview(collectionView)
         self.addSubview(pageControl)
+
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -93,6 +92,19 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         cell.addSubview(slideView)
 
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.frame.width, height: self.frame.height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageIndex = Int(round(self.collectionView.contentOffset.x / self.frame.width)) as Int
+        pageControl.currentPage = Int(pageIndex)
     }
 
 }

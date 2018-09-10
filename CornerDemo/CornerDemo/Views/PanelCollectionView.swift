@@ -2,43 +2,67 @@
 //  PanelCollectionView.swift
 //  CornerDemo
 //
-//  Created by Amarjit on 08/09/2018.
+//  Created by Amarjit on 10/09/2018.
 //  Copyright © 2018 Amarjit. All rights reserved.
 //
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "panelCellId"
+
+// contains 3 panels, punches, speed and power
 
 
-class PanelCollectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+class PanelCollectionView: UIView, UICollectionViewDelegate,
+UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    @IBOutlet var collectionView: UICollectionView!
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private lazy var flowLayout : UICollectionViewFlowLayout = {
+        let f = UICollectionViewFlowLayout()
+        f.scrollDirection = .horizontal
+        f.itemSize = CGSize(width: 165, height: 155)
+        f.minimumInteritemSpacing = CGFloat.greatestFiniteMagnitude
+        f.minimumLineSpacing = 5
+        return f
+    }()
 
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
-        self.collectionView.backgroundColor = UIColor.red
-    }
+    private lazy var collectionView : UICollectionView = {
+        let cv = UICollectionView.init(frame: self.frame, collectionViewLayout: flowLayout)
+        cv.translatesAutoresizingMaskIntoConstraints = false
+        cv.delegate = self
+        cv.dataSource = self
+        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        cv.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        cv.isPagingEnabled = false
+        cv.isScrollEnabled = false
+        return cv
+    }()
 
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    // MARK: UICollectionViewDataSource
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
         // Configure the cell
+        cell.backgroundColor = .red
 
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.frame.width, height: self.frame.height)
+    }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
 }

@@ -18,7 +18,6 @@ class PanelView : UIView {
 
     @IBOutlet var lblCollection: [UILabel]!
 
-    
     override func awakeFromNib() {
         self.layoutIfNeeded()
         setup()
@@ -27,17 +26,16 @@ class PanelView : UIView {
     private func setup() {
     }
 
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        xibSetup()
     }
 
-    /*
-     // Only override draw() if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
-     */
+    required init?(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        xibSetup()
+    }
 
+    
 }
