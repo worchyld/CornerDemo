@@ -18,7 +18,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return GraphView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150))
     }()
     lazy var slideCollectionView: SlideCollectionView = {
-        return SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 135))
+        let view = SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 135))
+        view.layer.borderColor = UIColor.red.cgColor
+        view.layer.borderWidth = 1
+        return view
     }()
 
     var viewModel: RoundViewModel!

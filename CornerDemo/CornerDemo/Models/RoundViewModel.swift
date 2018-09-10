@@ -9,7 +9,7 @@
 import Foundation
 
 // ViewModel for page
-class RoundViewModel {
+struct RoundViewModel {
     var pageTitle: String
     var roundData: RoundData
     var roundNumber: Int

@@ -13,10 +13,13 @@ private let reuseIdentifier = "slideCellId"
 class SlideCollectionView: UIView, UICollectionViewDelegate,
 UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    private lazy var cellWidth: CGFloat = self.frame.width
+    private lazy var cellHeight: CGFloat = self.frame.height
+
     private lazy var flowLayout : UICollectionViewFlowLayout = {
         let f = UICollectionViewFlowLayout()
         f.scrollDirection = .horizontal
-        f.itemSize = CGSize(width: 100, height: 100)
+        f.itemSize = CGSize(width: cellWidth, height: cellHeight)
         f.minimumInteritemSpacing = CGFloat.greatestFiniteMagnitude
         f.minimumLineSpacing = 5
         return f
@@ -44,6 +47,15 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         return pc
     }()
 
+    private lazy var slides:[UIView] = {
+        let frame = CGRect(x: 0, y: 0, width: cellWidth, height: cellHeight)
+        let slideOne : UIView = SlideOneView(frame: frame)
+        let slideTwo : UIView = SlideTwoView(frame: frame)
+
+        let slides = [slideOne, slideTwo]
+        return slides
+    }()
+
     override func awakeFromNib() {
         super.awakeFromNib()
         layoutIfNeeded()
@@ -53,7 +65,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         super.init(frame: frame)
         self.backgroundColor = .blue
         self.addSubview(collectionView)
-        //self.addSubview(pageControl)
+        self.addSubview(pageControl)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -68,7 +80,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return slides.count
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -76,9 +88,9 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
         // Configure the cell
-        cell.backgroundColor = UIColor.red
-
-
+        let row = indexPath.row
+        let slideView: UIView = slides[row] as UIView
+        cell.addSubview(slideView)
 
         return cell
     }

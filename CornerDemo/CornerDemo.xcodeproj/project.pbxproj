@@ -130,8 +130,8 @@
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
 		4DC3E0FA2145CEEE00017F50 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */; };
 		4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F1682144FA2A00C31B27 /* GraphView.swift */; };
-		4DE0F16D2145024700C31B27 /* SlideOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16C2145024700C31B27 /* SlideOne.swift */; };
-		4DE0F16F2145025600C31B27 /* SlideTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16E2145025600C31B27 /* SlideTwo.swift */; };
+		4DE0F16D2145024700C31B27 /* SlideOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16C2145024700C31B27 /* SlideOneView.swift */; };
+		4DE0F16F2145025600C31B27 /* SlideTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16E2145025600C31B27 /* SlideTwoView.swift */; };
 		4DE0F171214502A900C31B27 /* SlideOneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0F170214502A900C31B27 /* SlideOneView.xib */; };
 		4DE0F1732145032400C31B27 /* SlideTwoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0F1722145032400C31B27 /* SlideTwoView.xib */; };
 		4DE0F175214503A900C31B27 /* SlideTypeBreakDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0F174214503A900C31B27 /* SlideTypeBreakDownView.xib */; };
@@ -278,8 +278,8 @@
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
 		4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		4DE0F1682144FA2A00C31B27 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
-		4DE0F16C2145024700C31B27 /* SlideOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOne.swift; sourceTree = "<group>"; };
-		4DE0F16E2145025600C31B27 /* SlideTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTwo.swift; sourceTree = "<group>"; };
+		4DE0F16C2145024700C31B27 /* SlideOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOneView.swift; sourceTree = "<group>"; };
+		4DE0F16E2145025600C31B27 /* SlideTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTwoView.swift; sourceTree = "<group>"; };
 		4DE0F170214502A900C31B27 /* SlideOneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideOneView.xib; sourceTree = "<group>"; };
 		4DE0F1722145032400C31B27 /* SlideTwoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideTwoView.xib; sourceTree = "<group>"; };
 		4DE0F174214503A900C31B27 /* SlideTypeBreakDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideTypeBreakDownView.xib; sourceTree = "<group>"; };
@@ -400,10 +400,10 @@
 				4D8005602143BE49002044E5 /* ToolbarView.xib */,
 				4DE0F1682144FA2A00C31B27 /* GraphView.swift */,
 				4DE0F176214506D700C31B27 /* SlideCollectionView.swift */,
-				4DE0F16C2145024700C31B27 /* SlideOne.swift */,
+				4DE0F16C2145024700C31B27 /* SlideOneView.swift */,
 				4DE0F170214502A900C31B27 /* SlideOneView.xib */,
 				4DE0F174214503A900C31B27 /* SlideTypeBreakDownView.xib */,
-				4DE0F16E2145025600C31B27 /* SlideTwo.swift */,
+				4DE0F16E2145025600C31B27 /* SlideTwoView.swift */,
 				4DE0F1722145032400C31B27 /* SlideTwoView.xib */,
 			);
 			path = Views;
@@ -822,13 +822,13 @@
 				4D83F5BF214157D20036FE28 /* Enums.swift in Sources */,
 				4D83F5C521415B190036FE28 /* RoundData.swift in Sources */,
 				4D83F5C9214160C60036FE28 /* RoundViewModel.swift in Sources */,
-				4DE0F16D2145024700C31B27 /* SlideOne.swift in Sources */,
+				4DE0F16D2145024700C31B27 /* SlideOneView.swift in Sources */,
 				4DC3E0FA2145CEEE00017F50 /* SideMenuTableViewController.swift in Sources */,
 				4D83F59621414D380036FE28 /* ViewController.swift in Sources */,
 				4DE0F177214506D700C31B27 /* SlideCollectionView.swift in Sources */,
 				4D8005692143D813002044E5 /* Extensions.swift in Sources */,
 				4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */,
-				4DE0F16F2145025600C31B27 /* SlideTwo.swift in Sources */,
+				4DE0F16F2145025600C31B27 /* SlideTwoView.swift in Sources */,
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,

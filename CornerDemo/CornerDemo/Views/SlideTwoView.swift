@@ -8,10 +8,13 @@
 
 import UIKit
 
-class SlideTwo: UIView {
+class SlideTwoView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
     }
+
+
+
 }

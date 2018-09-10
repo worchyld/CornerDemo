@@ -69,6 +69,6 @@ class RoundData {
             rounds.append( FightRound(ts: tsInterval, punch_type_id: punch_type_id, speed: speed, power: power) )
         }
 
-        print (rounds.description)
+        //print (rounds.description)
     }
 }
