@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Round : CustomStringConvertible {
+struct FightRound : CustomStringConvertible {
     let ts: TimeInterval
     let punch_type_id: Int
     let speed: Double // in mph
@@ -22,7 +22,7 @@ struct Round : CustomStringConvertible {
     }
 }
 
-extension Round {
+extension FightRound {
     var description: String {
         return ("Round: \(String(describing: ts)), \(punch_type_id), \(speed), \(power)\n")
     }

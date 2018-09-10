@@ -29,7 +29,7 @@ extension TimeInterval {
 class RoundData {
     static var instance = RoundData()
 
-    public private(set) var rounds: [Round]?
+    public private(set) var rounds: [FightRound]?
 
     init() {
         // pre-load rounds from CSV
@@ -42,7 +42,7 @@ class RoundData {
         let stream = InputStream(fileAtPath: filepath)!
         let csv = try! CSVReader(stream: stream, hasHeaderRow: true, trimFields: true, delimiter: ",", whitespaces: NSCharacterSet.whitespaces)
 
-        var rounds: [Round] = [Round]()
+        var rounds: [FightRound] = [FightRound]()
 
         while csv.next() != nil {
 
@@ -66,7 +66,7 @@ class RoundData {
             let power : Double = (Double(str_power_g))!
 
             //  Add round
-            rounds.append( Round(ts: tsInterval, punch_type_id: punch_type_id, speed: speed, power: power) )
+            rounds.append( FightRound(ts: tsInterval, punch_type_id: punch_type_id, speed: speed, power: power) )
         }
 
         print (rounds.description)

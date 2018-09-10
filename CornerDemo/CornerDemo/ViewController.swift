@@ -17,9 +17,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     lazy var graphView: GraphView = {
         return GraphView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150))
     }()
-//    lazy var slideCollectionView: SlideCollectionView = {
-//        return SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 125))
-//    }()
+    lazy var slideCollectionView: SlideCollectionView = {
+        return SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 135))
+    }()
 
     var viewModel: RoundViewModel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -38,11 +38,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Define the menus
          let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
-
-        // Enable gestures. The left and/or right menus must be set up above for these to work.
-        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -73,7 +68,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             break
 
         case 2:
-            //cell.addSubview(slideCollectionView)
+            cell.addSubview(slideCollectionView)
             break
 
         default:
