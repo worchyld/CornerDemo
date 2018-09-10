@@ -14,50 +14,28 @@ private let reuseIdentifier = "panelCellId"
 
 
 class PanelCollectionView: UIView, UICollectionViewDelegate,
-UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    private lazy var cellSize : CGSize = {
+        let width = floor(self.frame.width / 3)
+        return CGSize(width: width, height: 125)
+    }()
 
     private lazy var flowLayout : UICollectionViewFlowLayout = {
-        /*
         let f = UICollectionViewFlowLayout()
         f.scrollDirection = .horizontal
-        f.itemSize = CGSize(width: 165, height: 155)
-        f.minimumInteritemSpacing = CGFloat.greatestFiniteMagnitude
-        f.minimumLineSpacing = 5
-         */
-
-        let flow = UICollectionViewFlowLayout()
-        flow.scrollDirection = .horizontal
-        flow.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
-        flow.itemSize = CGSize(width: 165, height: 155)
-        flow.minimumLineSpacing = 5
-
-        return flow
+        f.itemSize = cellSize
+        f.minimumInteritemSpacing = 15
+        return f
     }()
 
     private lazy var collectionView : UICollectionView = {
-        let cv = UICollectionView.init(frame: self.frame, collectionViewLayout: flowLayout)
-        cv.translatesAutoresizingMaskIntoConstraints = false
+        let cv = UICollectionView(frame: self.frame, collectionViewLayout: flowLayout)
+        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         cv.delegate = self
         cv.dataSource = self
-        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        cv.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-
-        cv.isScrollEnabled = true
-
         return cv
     }()
-
-    /*
-    private lazy var panels : [UIView] = {
-        let panelPunchView : PanelView = PanelView()
-        let panelSpeedView : PanelView = PanelView()
-        let panelPowerView : PanelView = PanelView()
-
-        let panels = [panelPunchView, panelSpeedView, panelPowerView]
-        return panels
-    }()
-    */
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -66,7 +44,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubview(collectionView)
+        addSubview(collectionView)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -87,11 +65,19 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
-        // Configure the cell
-        let view = PanelView(frame: cell.frame)
+        let view = PanelView()
         cell.addSubview(view)
+        cell.backgroundColor = UIColor( Constants.Colours.panelBGColor )
 
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return cellSize
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
 
 }

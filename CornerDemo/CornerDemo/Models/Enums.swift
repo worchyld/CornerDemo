@@ -23,7 +23,8 @@ struct Constants {
     public static let fightTime : TimeInterval = 180.0 // 3 minutes
 
     struct Colours {
-        public static let bgColor = "#0f0f14"
+        public static let bgColor = "#000000"
+        public static let panelBGColor = "#0f0f14"
         public static let verticalLine = "#161619"
         public static let graphHighPeak = "#3bd500"
         public static let graphMidPeak = "#cba600"

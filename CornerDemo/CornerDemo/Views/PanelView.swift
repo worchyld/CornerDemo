@@ -24,6 +24,7 @@ class PanelView : UIView {
     }
 
     private func setup() {
+        self.backgroundColor = UIColor( Constants.Colours.panelBGColor )
     }
 
     override init(frame: CGRect) {
