@@ -13,7 +13,7 @@ enum UnitSpeed : String {
     case g
 }
 
-enum FightState {
+enum FightState : String {
     case rest
     case fight
 }
@@ -56,13 +56,5 @@ enum PunchType : Int {
 }
 
 
-/*
- let formatter = DateComponentsFormatter()
- formatter.unitsStyle = .positional
- formatter.allowedUnits = [ .hour, .minute, .second, .nanosecond ]
- formatter.zeroFormattingBehavior = [ .pad ]
-
- let formatted = formatter.string(from: ts)
-*/
 
 

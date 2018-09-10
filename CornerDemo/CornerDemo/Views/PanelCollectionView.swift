@@ -12,19 +12,13 @@ private let reuseIdentifier = "panelCellId"
 
 // contains 3 panels, punches, speed and power
 
-
 class PanelCollectionView: UIView, UICollectionViewDelegate,
     UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-    private lazy var cellSize : CGSize = {
-        let width = floor(self.frame.width / 3)
-        return CGSize(width: width, height: 125)
-    }()
 
     private lazy var flowLayout : UICollectionViewFlowLayout = {
         let f = UICollectionViewFlowLayout()
         f.scrollDirection = .horizontal
-        f.itemSize = cellSize
+        f.itemSize = CGSize(width: 130, height: 125)
         f.minimumInteritemSpacing = 15
         return f
     }()
@@ -65,15 +59,22 @@ class PanelCollectionView: UIView, UICollectionViewDelegate,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
-        let view = PanelView()
-        cell.addSubview(view)
-        cell.backgroundColor = UIColor( Constants.Colours.panelBGColor )
+        configure(cell: cell, atIndexPath: indexPath)
 
         return cell
     }
 
+    func configure(cell:UICollectionViewCell, atIndexPath: IndexPath) {
+
+        let view = PanelView()
+        //view.setupView()
+        cell.addSubview(view)
+        cell.backgroundColor = UIColor( Constants.Colours.panelBGColor )
+    }
+
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return cellSize
+        return CGSize(width: 130, height: 125)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

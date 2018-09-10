@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PanelView" customModule="CornerDemo" customModuleProvider="target">
             <connections>
                 <outlet property="imageView" destination="c3t-ZO-adK" id="wBB-jB-6q5"/>
-                <outlet property="lblData" destination="pV6-ca-dpP" id="BUr-ia-TMz"/>
+                <outlet property="lblFormattedNumber" destination="pV6-ca-dpP" id="1fg-l0-xvW"/>
                 <outlet property="lblTitle" destination="eif-qt-qus" id="UU9-ra-B5X"/>
                 <outlet property="lblUnit" destination="Vaa-3T-oks" id="I4j-sk-SzS"/>
             </connections>
@@ -52,7 +52,7 @@
             <color key="backgroundColor" red="0.058823529409999999" green="0.058823529409999999" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="56.5" y="78.5"/>
+            <point key="canvasLocation" x="56" y="78.5"/>
         </view>
     </objects>
     <resources>

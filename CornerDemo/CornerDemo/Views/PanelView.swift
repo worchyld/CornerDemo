@@ -9,22 +9,50 @@
 import Foundation
 import UIKit
 
+struct PanelViewModel {
+    let title: String
+    private let number: Double
+    public var formattedNumber: String? {
+        return "99.9"
+    }
+    let unit: UnitSpeed?
+
+    let showUnit: Bool
+    let showImageView: Bool
+    let change: Int
+
+    init(title: String, number: Double, unit: UnitSpeed?) {
+        self.title = title
+        self.number = number
+        self.unit = unit
+
+        if let _ = self.unit {
+            showUnit = true
+        }
+        else {
+            showUnit = false
+        }
+        self.showImageView = true
+        self.change = 0
+    }
+}
+
 class PanelView : UIView {
 
     @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblData: UILabel!
+    @IBOutlet weak var lblFormattedNumber: UILabel!
     @IBOutlet weak var lblUnit: UILabel!
     @IBOutlet weak var imageView: UIImageView!
 
     @IBOutlet var lblCollection: [UILabel]!
 
     override func awakeFromNib() {
+        super.awakeFromNib()
         self.layoutIfNeeded()
-        setup()
     }
 
-    private func setup() {
-        self.backgroundColor = UIColor( Constants.Colours.panelBGColor )
+    public func setupView(viewModel: PanelViewModel) {
+        
     }
 
     override init(frame: CGRect) {
