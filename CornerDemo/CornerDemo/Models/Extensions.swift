@@ -9,6 +9,24 @@
 import Foundation
 import UIKit
 
+
+extension TimeInterval {
+    public static func parseDuration(_ timeString:String) -> TimeInterval {
+        guard !timeString.isEmpty else {
+            return 0
+        }
+
+        var interval:Double = 0
+
+        let parts = timeString.components(separatedBy: ":")
+        for (index, part) in parts.reversed().enumerated() {
+            interval += (Double(part) ?? 0) * pow(Double(60), Double(index))
+        }
+
+        return interval
+    }
+}
+
 extension UIView {
 
     func addConstraintsWithFormat(format: String, views: UIView...) {
@@ -28,6 +46,8 @@ extension UIView {
         addConstraintsWithFormat(format: "H:|[v0]|", views: view)
         addConstraintsWithFormat(format: "V:|[v0]|", views: view)
     }
+
+    
 }
 
 

@@ -13,6 +13,8 @@ private let reuseIdentifier = "slideCellId"
 class SlideCollectionView: UIView, UICollectionViewDelegate,
 UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    var viewModel: RoundViewModel!
+
     private lazy var cellWidth: CGFloat = self.frame.width
     private lazy var cellHeight: CGFloat = 120
 

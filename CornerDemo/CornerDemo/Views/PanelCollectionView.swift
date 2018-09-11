@@ -15,6 +15,8 @@ private let reuseIdentifier = "panelCellId"
 class PanelCollectionView: UIView, UICollectionViewDelegate,
     UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    var viewModel: RoundViewModel!
+
     private lazy var flowLayout : UICollectionViewFlowLayout = {
         let f = UICollectionViewFlowLayout()
         f.scrollDirection = .horizontal
@@ -35,6 +37,7 @@ class PanelCollectionView: UIView, UICollectionViewDelegate,
         super.awakeFromNib()
         layoutIfNeeded()
     }
+
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -67,7 +70,20 @@ class PanelCollectionView: UIView, UICollectionViewDelegate,
     func configure(cell:UICollectionViewCell, atIndexPath: IndexPath) {
 
         let view = PanelView()
-        //view.setupView()
+
+        switch atIndexPath.row {
+        case 0:
+            break
+        case 1:
+            break
+
+        case 2:
+            break
+
+        default:
+            break
+        }
+
         cell.addSubview(view)
         cell.backgroundColor = UIColor( Constants.Colours.panelBGColor )
     }

@@ -20,11 +20,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }()
     private lazy var panelCollectionView: PanelCollectionView = {
         let view = PanelCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height:150))
+        view.viewModel = self.viewModel
         return view
     }()
 
     private lazy var slideCollectionView: SlideCollectionView = {
         let view = SlideCollectionView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height:150))
+        view.viewModel = self.viewModel
         return view
     }()
 
@@ -33,8 +35,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = RoundViewModel(withRound: 1)
-        setupView()
+
+        DispatchQueue.global(qos:.userInteractive).async {
+            self.viewModel = RoundViewModel()
+
+            DispatchQueue.main.async {
+                self.setupView()
+                self.collectionView.reloadData()
+            }
+        }
     }
 
     private func setupView() {

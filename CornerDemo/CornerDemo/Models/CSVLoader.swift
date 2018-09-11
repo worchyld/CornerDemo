@@ -1,5 +1,5 @@
 //
-//  Rounds.swift
+//  CSVLoader.swift
 //  CornerDemo
 //
 //  Created by Amarjit on 06/09/2018.
@@ -9,40 +9,23 @@
 import Foundation
 import CSV
 
-extension TimeInterval {
-    public static func parseDuration(_ timeString:String) -> TimeInterval {
-        guard !timeString.isEmpty else {
-            return 0
-        }
+class CSVLoader {
 
-        var interval:Double = 0
+//    public private(set) var rounds : [FightRound]!
 
-        let parts = timeString.components(separatedBy: ":")
-        for (index, part) in parts.reversed().enumerated() {
-            interval += (Double(part) ?? 0) * pow(Double(60), Double(index))
-        }
+//    init() {
+//        parseCSV { (completed: Bool, rounds:[FightRound]) -> Void in
+//            if (completed) {
+//                print ("Completed handler")
+//                self.rounds = rounds
+//            }
+//            else {
+//                assertionFailure("Could not complete handler")
+//            }
+//        }
+//    }
 
-        return interval
-    }
-}
-
-class RoundData {
-
-    public private(set) var rounds : [FightRound]!
-
-    init() {
-        loadCSV { (completed: Bool, rounds:[FightRound]) -> Void in
-            if (completed) {
-                print ("Completed handler")
-                self.rounds = rounds
-            }
-            else {
-                assertionFailure("Could not complete handler")
-            }
-        }
-    }
-
-    private func loadCSV(completionHandler:@escaping (_ success:Bool, _ rounds:[FightRound] ) -> Void) {
+    public static func parseCSV(completionHandler:@escaping (_ success:Bool, _ rounds:[FightRound] ) -> Void) {
         // pre-load rounds from CSV
 
         guard let filepath = Bundle.main.path(forResource: "Round1", ofType: "csv") else {

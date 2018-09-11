@@ -38,6 +38,12 @@ struct Constants {
         public static let dullWhite = "#d6d6d7"
         public static let grayText = "#878787"
     }
+
+    struct ImageName {
+        public static let arrowUp = "arrow-up"
+        public static let arrowDown = "arrow-down"
+        public static let arrowUnchanged = "minus"
+    }
 }
 
 /* Left hand punches: 0 - Jab, 1 - Hook, 2 - Uppercut */

@@ -9,16 +9,52 @@
 import Foundation
 
 // ViewModel for page
-struct RoundViewModel {
+class RoundViewModel {
     var pageTitle: String
-    var roundData: RoundData
-    var roundNumber: Int
-    var avg : CalculateAverage
+    var rounds : [FightRound]!
+    var roundNumber: Int = 0
 
-    init(withRound round:Int = 1) {
-        self.roundNumber = round
+    lazy var punches : Int = {
+        return self.rounds.count
+    }()
+
+    lazy var power : Double = {
+        let powerTotal = self.rounds.reduce(0) {
+            $0 + ($1.power)
+        }
+        if ((powerTotal == 0) || (self.rounds.count == 0)) {
+            return 0
+        }
+        return (powerTotal / Double(rounds.count))
+    }()
+
+    lazy var speed : Double = {
+        let speedTotal = self.rounds.reduce(0) {
+            $0 + ($1.speed)
+        }
+        if ((speedTotal == 0) || (self.rounds.count == 0)) {
+            return 0
+        }
+        return (speedTotal / Double(rounds.count))
+    }()
+    
+
+    init() {
+        self.roundNumber += 1
         self.pageTitle = NSLocalizedString("pageTitle", tableName: nil, bundle: Bundle.main, value: "Round \(roundNumber)", comment: "Page title")
-        self.roundData = RoundData()
-        self.avg = CalculateAverage.init(rounds: self.roundData.rounds)
+
+        loadCSV()
     }
+
+    private func loadCSV() {
+        CSVLoader.parseCSV { (completed: Bool, rounds:[FightRound]) -> Void in
+            if (completed) {
+                self.rounds = rounds
+            }
+            else {
+                assertionFailure("Could not complete handler")
+            }
+        }
+    }
+
 }
