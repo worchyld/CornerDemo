@@ -48,22 +48,12 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     }()
 
     /*
-    private lazy var slides:[UIView] = {
-        let slideOneViewModel: SlideOneViewModel = SlideOneViewModel()
-        let frame = CGRect(x: 0, y: 0, width: cellWidth , height: cellHeight)
-        let slideOne : SlideOneView = SlideOneView(frame: frame)
-        let slideTwo : SlideTwoView = SlideTwoView(frame: frame)
-
-        return [slideOne, slideTwo]
-    }()
-    */
-
     private lazy var slideOneViewModel: SlideOneViewModel = {
         let left: SlideOneViewModel.Left = SlideOneViewModel.Left(jab: 6, hook: 5, uppercut: 2)
         let right: SlideOneViewModel.Right = SlideOneViewModel.Right(cross: 4, hook: 2, uppercut: 3)
         let viewModel = SlideOneViewModel.init(left: left, right: right)
         return viewModel
-    }()
+    }()*/
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -101,7 +91,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
         if (row == 0) {
             let slide : SlideOneView = SlideOneView()
-            slide.setViewModel(viewModel: self.slideOneViewModel)
+            slide.setViewModel(viewModel: self.viewModel)
             cell.addSubview(slide)
         } else if (row == 2) {
             let slide : SlideTwoView = SlideTwoView()

@@ -8,30 +8,6 @@
 
 import UIKit
 
-struct SlideOneViewModel {
-    var field: String = "123"
-
-    struct Left {
-        var jab: Int = 0
-        var hook: Int = 0
-        var uppercut: Int = 0
-    }
-    struct Right {
-        var cross: Int = 0
-        var hook: Int = 0
-        var uppercut: Int = 0
-    }
-
-    let left: Left
-    let right: Right
-
-    init(left: Left, right: Right) {
-        self.left = left
-        self.right = right
-    }
-
-}
-
 class SlideOneView: UIView {
 
     @IBOutlet weak var leftJabValue: UILabel! {
@@ -74,7 +50,7 @@ class SlideOneView: UIView {
     @IBOutlet var panelLabelCollection: [UILabel]!
     @IBOutlet var progressViewCollection: [UIProgressView]!
 
-    public private(set) var viewModel: SlideOneViewModel?
+    var viewModel: RoundViewModel?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -87,7 +63,7 @@ class SlideOneView: UIView {
         super.init(coder: aDecoder)
     }
 
-    public func setViewModel(viewModel: SlideOneViewModel) {
+    public func setViewModel(viewModel: RoundViewModel) {
         self.viewModel = viewModel
     }
 
@@ -107,15 +83,20 @@ class SlideOneView: UIView {
             }
         }
 
-        self.panelTitleLabel.text = "Type breakdown"
+        self.panelTitleLabel.text = NSLocalizedString("Type breakdown", comment: "Slide title")
 
-        self.leftJabValue.text = "6"
-        self.leftHookValue.text = "5"
-        self.leftUppercutValue.text = "2"
+        guard let hasViewModel = self.viewModel else {
+            assertionFailure("ViewModel was not initialised")
+            return
+        }
 
-        self.rightCrossValue.text = "4"
-        self.rightHookValue.text = "2"
-        self.rightUppercutValue.text = "3"
+        self.leftJabValue.text = String(hasViewModel.punch.left.jab)
+        self.leftHookValue.text = String(hasViewModel.punch.left.hook)
+        self.leftUppercutValue.text = String(hasViewModel.punch.left.uppercut)
+
+        self.rightCrossValue.text = String(hasViewModel.punch.right.cross)
+        self.rightHookValue.text = String(hasViewModel.punch.right.hook)
+        self.rightUppercutValue.text = String(hasViewModel.punch.right.uppercut)
 
     }
 

@@ -8,11 +8,40 @@
 
 import Foundation
 
+struct PunchModel : CustomStringConvertible {
+    struct LeftHand  : CustomStringConvertible {
+        var jab: Int = 0
+        var hook: Int = 0
+        var uppercut: Int = 0
+
+        var description: String {
+            return ("Jab - \(jab), Hook - \(hook), Uppercut - \(uppercut)")
+        }
+    }
+    struct RightHand : CustomStringConvertible {
+        var cross: Int = 0
+        var hook: Int = 0
+        var uppercut: Int = 0
+
+        var description: String {
+            return ("Jab - \(cross), Hook - \(hook), Uppercut - \(uppercut)")
+        }
+    }
+
+    var left: LeftHand!
+    var right: RightHand!
+
+    var description: String {
+        return ("LeftHand: \(self.left.description), RightHand: \(self.right.description)")
+    }
+}
+
 // ViewModel for page
 class RoundViewModel {
     var pageTitle: String
     var rounds : [FightRound]!
     var roundNumber: Int = 0
+    var punch: PunchModel!
 
     lazy var punches : Int = {
         return self.rounds.count
@@ -38,12 +67,7 @@ class RoundViewModel {
         return (speedTotal / Double(rounds.count))
     }()
 
-    func find(punch_type_id: Int) -> [FightRound] {
-        let results = self.rounds.filter { (fr: FightRound) -> Bool in
-            return (fr.punch_type_id == punch_type_id)
-        }
-        return results
-    }
+    // MARK: Main functions
 
     init() {
         self.roundNumber += 1
@@ -52,15 +76,42 @@ class RoundViewModel {
         loadCSV()
     }
 
+    func find(punch_type_id: Int) -> [FightRound] {
+        let results = self.rounds.filter { (fr: FightRound) -> Bool in
+            return (fr.punch_type_id == punch_type_id)
+        }
+        return results
+    }
+
+
+    // MARK: (Private) functions
     private func loadCSV() {
         CSVLoader.parseCSV { (completed: Bool, rounds:[FightRound]) -> Void in
             if (completed) {
                 self.rounds = rounds
+                self.preparePunchModel()
             }
             else {
                 assertionFailure("Could not complete handler")
             }
         }
+    }
+
+    private func preparePunchModel() {
+        var left = PunchModel.LeftHand()
+        left.jab = self.find(punch_type_id: PunchType.leftJab.rawValue).count
+        left.hook = self.find(punch_type_id: PunchType.leftHook.rawValue).count
+        left.uppercut = self.find(punch_type_id: PunchType.leftUppercut.rawValue).count
+
+        var right = PunchModel.RightHand()
+        right.cross = self.find(punch_type_id: PunchType.rightCross.rawValue).count
+        right.hook = self.find(punch_type_id: PunchType.rightHook.rawValue).count
+        right.uppercut = self.find(punch_type_id: PunchType.rightUpperCut.rawValue).count
+
+        self.punch.left = left
+        self.punch.right = right
+
+        print (self.punch.description)
     }
 
 }
