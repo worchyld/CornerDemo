@@ -73,18 +73,21 @@ class PanelCollectionView: UIView, UICollectionViewDelegate,
         switch atIndexPath.row {
         case 0:
             print ("Punches: \(self.viewModel.punches)")
+            
             let model = PanelViewModel(title: "Punches", number: Double(self.viewModel.punches), unit: nil)
             view.setupView(viewModel: model)
             break
 
         case 1:
             print ("speed: \(self.viewModel.speed)")
+
             let model = PanelViewModel(title: "Speed (avg)", number: Double(self.viewModel.speed), unit: UnitSpeed.mph)
             view.setupView(viewModel: model)
             break
 
         case 2:
             print ("power: \(self.viewModel.power)")
+
             let model = PanelViewModel(title: "Power (avg)", number: Double(self.viewModel.power), unit: UnitSpeed.g)
             view.setupView(viewModel: model)
             break
