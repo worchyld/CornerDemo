@@ -9,7 +9,7 @@
 import UIKit
 
 struct SlideOneViewModel {
-
+    var field: String = "123"
 }
 
 class SlideOneView: UIView {
@@ -54,12 +54,12 @@ class SlideOneView: UIView {
     @IBOutlet var panelLabelCollection: [UILabel]!
     @IBOutlet var progressViewCollection: [UIProgressView]!
 
-    //var viewModel: SlideOneViewModel!
+    var viewModel: SlideOneViewModel?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
-        setup()
+        //setup()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -68,7 +68,7 @@ class SlideOneView: UIView {
         xibSetup()
     }
 
-    public func setup() {
+    public func setup(viewModel: SlideOneViewModel) {
         let _ = progressViewCollection.enumerated().map {
             ( _, element:UIProgressView) in
             element.trackTintColor = UIColor(Constants.Colours.bgColor)

@@ -47,15 +47,16 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         return cv
     }()
 
-
+    /*
     private lazy var slides:[UIView] = {
+        let slideOneViewModel: SlideOneViewModel = SlideOneViewModel()
         let frame = CGRect(x: 0, y: 0, width: cellWidth , height: cellHeight)
-        let slideOne : UIView = SlideOneView(frame: frame)
-        let slideTwo : UIView = SlideTwoView(frame: frame)
+        let slideOne : SlideOneView = SlideOneView(frame: frame)
+        let slideTwo : SlideTwoView = SlideTwoView(frame: frame)
 
-        let slides = [slideOne, slideTwo]
-        return slides
+        return [slideOne, slideTwo]
     }()
+    */
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -81,7 +82,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return slides.count
+        return 2
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -90,8 +91,18 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
         // Configure the cell
         let row = indexPath.row
-        let slideView: UIView = slides[row] as UIView
-        cell.addSubview(slideView)
+
+        if (row == 0) {
+            let slide : SlideOneView = SlideOneView()
+            //slide.viewModel = SlideOneViewModel()
+            cell.addSubview(slide)
+        } else if (row == 2) {
+            let slide : SlideTwoView = SlideTwoView()
+            cell.addSubview(slide)
+        }
+
+        //let slideView: UIView = slides[row] as UIView
+        //cell.addSubview(slideView)
 
         return cell
     }
