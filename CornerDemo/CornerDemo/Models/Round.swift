@@ -8,11 +8,18 @@
 
 import Foundation
 
-struct FightRound : CustomStringConvertible {
-    let ts: TimeInterval
-    let punch_type_id: Int
-    let speed: Double // in mph
-    let power: Double // in g
+protocol FightRoundProtocol {
+    var ts: TimeInterval { get }
+    var punch_type_id : Int { get }
+    var speed : Double { get }
+    var power : Double { get }
+}
+
+struct FightRound : CustomStringConvertible, FightRoundProtocol {
+    public private (set) var ts: TimeInterval
+    public private (set) var punch_type_id: Int
+    public private (set) var speed: Double
+    public private (set) var power: Double
 
     init(ts: TimeInterval, punch_type_id: Int, speed: Double, power: Double) {
         self.ts = ts

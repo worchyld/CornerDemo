@@ -13,6 +13,7 @@ struct RoundViewModel {
     var pageTitle: String
     var roundData: RoundData
     var roundNumber: Int
+    
 
     init(withRound round:Int = 1) {
         self.roundNumber = round

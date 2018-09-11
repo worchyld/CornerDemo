@@ -129,6 +129,7 @@
 		4D83F6A5214177BC0036FE28 /* Fontfabric - IntroLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */; };
 		4D83F6A6214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */; };
 		4DB5C6632147027400B71535 /* ObjectCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5C6622147027400B71535 /* ObjectCache.swift */; };
+		4DB5C6652147A74D00B71535 /* PanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5C6642147A74D00B71535 /* PanelViewModel.swift */; };
 		4DC3E0FA2145CEEE00017F50 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */; };
 		4DE0F1692144FA2A00C31B27 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F1682144FA2A00C31B27 /* GraphView.swift */; };
 		4DE0F16D2145024700C31B27 /* SlideOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0F16C2145024700C31B27 /* SlideOneView.swift */; };
@@ -277,6 +278,7 @@
 		4D83F640214177BC0036FE28 /* Fontfabric - IntroLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroLight.otf"; sourceTree = "<group>"; };
 		4D83F641214177BC0036FE28 /* Fontfabric - IntroCondLightAlt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - IntroCondLightAlt.otf"; sourceTree = "<group>"; };
 		4DB5C6622147027400B71535 /* ObjectCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCache.swift; sourceTree = "<group>"; };
+		4DB5C6642147A74D00B71535 /* PanelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewModel.swift; sourceTree = "<group>"; };
 		4DC3E0F92145CEEE00017F50 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		4DE0F1682144FA2A00C31B27 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		4DE0F16C2145024700C31B27 /* SlideOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOneView.swift; sourceTree = "<group>"; };
@@ -383,7 +385,6 @@
 				4D83F5BE214157D20036FE28 /* Enums.swift */,
 				4D83F5C22141586B0036FE28 /* Round.swift */,
 				4D83F5C421415B190036FE28 /* RoundData.swift */,
-				4D83F5C8214160C60036FE28 /* RoundViewModel.swift */,
 				4D83F5CA21416E0E0036FE28 /* HexColors.swift */,
 				4D8005682143D813002044E5 /* Extensions.swift */,
 				4DB5C6622147027400B71535 /* ObjectCache.swift */,
@@ -394,6 +395,7 @@
 		4D83F5C1214158330036FE28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DB5C6662147A76100B71535 /* ViewModels */,
 				4D77714C2146BF9300B9C26F /* PanelCollectionView.swift */,
 				4D83F5B8214156670036FE28 /* PanelView.swift */,
 				4D83F5B621414E6C0036FE28 /* PanelView.xib */,
@@ -531,6 +533,15 @@
 				4D83F638214177BC0036FE28 /* Fontfabric - Intro Cond Black Caps.ttf */,
 			);
 			path = "Alternative files";
+			sourceTree = "<group>";
+		};
+		4DB5C6662147A76100B71535 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5C6642147A74D00B71535 /* PanelViewModel.swift */,
+				4D83F5C8214160C60036FE28 /* RoundViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		660AC012B16C38BB839BC16C /* Frameworks */ = {
@@ -832,6 +843,7 @@
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Round.swift in Sources */,
+				4DB5C6652147A74D00B71535 /* PanelViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,11 +27,22 @@ extension TimeInterval {
 }
 
 class RoundData {
-    static var instance = RoundData()
 
-    public private(set) var rounds: [FightRound]?
+    public private(set) var rounds : [FightRound]!
 
     init() {
+        loadCSV { (completed: Bool, rounds:[FightRound]) -> Void in
+            if (completed) {
+                print ("Completed handler")
+                self.rounds = rounds
+            }
+            else {
+                assertionFailure("Could not complete handler")
+            }
+        }
+    }
+
+    private func loadCSV(completionHandler:@escaping (_ success:Bool, _ rounds:[FightRound] ) -> Void) {
         // pre-load rounds from CSV
 
         guard let filepath = Bundle.main.path(forResource: "Round1", ofType: "csv") else {
@@ -70,5 +81,7 @@ class RoundData {
         }
 
         //print (rounds.description)
+
+        completionHandler(true, rounds)
     }
 }
