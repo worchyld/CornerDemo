@@ -32,7 +32,7 @@ struct PunchModel : CustomStringConvertible {
     var right: RightHand!
 
     var description: String {
-        return ("LeftHand: \(self.left.description), RightHand: \(self.right.description)")
+        return ("Left: \(self.left.description),\n Right: \(self.right.description)")
     }
 }
 
@@ -74,6 +74,7 @@ class RoundViewModel {
         self.pageTitle = NSLocalizedString("pageTitle", tableName: nil, bundle: Bundle.main, value: "Round \(roundNumber)", comment: "Page title")
 
         loadCSV()
+        print (self.punch.description)
     }
 
     func find(punch_type_id: Int) -> [FightRound] {
@@ -108,10 +109,9 @@ class RoundViewModel {
         right.hook = self.find(punch_type_id: PunchType.rightHook.rawValue).count
         right.uppercut = self.find(punch_type_id: PunchType.rightUpperCut.rawValue).count
 
-        self.punch.left = left
-        self.punch.right = right
+        self.punch = PunchModel.init(left: left, right: right)
 
-        print (self.punch.description)
+        //print (self.punch.description)
     }
 
 }

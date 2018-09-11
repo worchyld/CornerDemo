@@ -52,6 +52,11 @@ class SlideOneView: UIView {
 
     var viewModel: RoundViewModel?
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.layoutIfNeeded()
+    }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
@@ -59,34 +64,13 @@ class SlideOneView: UIView {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
 
-    public func setViewModel(viewModel: RoundViewModel) {
-        self.viewModel = viewModel
-    }
-
-    private func setupView() {
-        let _ = progressViewCollection.enumerated().map {
-            ( _, element:UIProgressView) in
-            element.trackTintColor = UIColor(Constants.Colours.bgColor)
-            if (element.tag < 3) {
-                element.progressTintColor = UIColor(Constants.Colours.green)
-            }
-            else {
-                print ("transform")
-                element.progressTintColor = UIColor(Constants.Colours.blue)
-                //element.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI));
-                let rotate = -(Double.pi)
-                element.transform = CGAffineTransform(rotationAngle: CGFloat(rotate))
-            }
-        }
-
-        self.panelTitleLabel.text = NSLocalizedString("Type breakdown", comment: "Slide title")
+    func setViewModel(model: RoundViewModel) {
+         self.viewModel = model
 
         guard let hasViewModel = self.viewModel else {
-            assertionFailure("ViewModel was not initialised")
             return
         }
 
@@ -97,7 +81,24 @@ class SlideOneView: UIView {
         self.rightCrossValue.text = String(hasViewModel.punch.right.cross)
         self.rightHookValue.text = String(hasViewModel.punch.right.hook)
         self.rightUppercutValue.text = String(hasViewModel.punch.right.uppercut)
+    }
 
+    private func setupView() {
+        let _ = progressViewCollection.enumerated().map {
+            ( _, element:UIProgressView) in
+            element.trackTintColor = UIColor(Constants.Colours.bgColor)
+            if (element.tag < 3) {
+                element.progressTintColor = UIColor(Constants.Colours.green)
+            }
+            else {
+                element.progressTintColor = UIColor(Constants.Colours.blue)
+                //element.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI));
+                let rotate = -(Double.pi)
+                element.transform = CGAffineTransform(rotationAngle: CGFloat(rotate))
+            }
+        }
+
+        self.panelTitleLabel.text = NSLocalizedString("Type breakdown", comment: "Slide title")
     }
 
 }
