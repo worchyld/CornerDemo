@@ -37,7 +37,13 @@ class RoundViewModel {
         }
         return (speedTotal / Double(rounds.count))
     }()
-    
+
+    func find(punch_type_id: Int) -> [FightRound] {
+        let results = self.rounds.filter { (fr: FightRound) -> Bool in
+            return (fr.punch_type_id == punch_type_id)
+        }
+        return results
+    }
 
     init() {
         self.roundNumber += 1

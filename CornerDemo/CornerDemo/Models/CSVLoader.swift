@@ -11,20 +11,6 @@ import CSV
 
 class CSVLoader {
 
-//    public private(set) var rounds : [FightRound]!
-
-//    init() {
-//        parseCSV { (completed: Bool, rounds:[FightRound]) -> Void in
-//            if (completed) {
-//                print ("Completed handler")
-//                self.rounds = rounds
-//            }
-//            else {
-//                assertionFailure("Could not complete handler")
-//            }
-//        }
-//    }
-
     public static func parseCSV(completionHandler:@escaping (_ success:Bool, _ rounds:[FightRound] ) -> Void) {
         // pre-load rounds from CSV
 

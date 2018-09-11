@@ -8,22 +8,53 @@
 
 import UIKit
 
+struct SlideOneViewModel {
+
+}
+
 class SlideOneView: UIView {
 
-    @IBOutlet weak var leftJabValue: UILabel!
-    @IBOutlet weak var leftHookValue: UILabel!
-    @IBOutlet weak var leftUppercutValue: UILabel!
+    @IBOutlet weak var leftJabValue: UILabel! {
+        didSet {
+            leftJabValue.sizeToFit()
+        }
+    }
+    @IBOutlet weak var leftHookValue: UILabel! {
+        didSet {
+            leftHookValue.sizeToFit()
+        }
+    }
+    @IBOutlet weak var leftUppercutValue: UILabel! {
+        didSet {
+            leftUppercutValue.sizeToFit()
+        }
+    }
 
-    @IBOutlet weak var rightCrossValue: UILabel!
-    @IBOutlet weak var rightHookValue: UILabel!
-    @IBOutlet weak var rightUppercutValue: UILabel!
+    @IBOutlet weak var rightCrossValue: UILabel! {
+        didSet {
+            rightCrossValue.sizeToFit()
+        }
+    }
+    @IBOutlet weak var rightHookValue: UILabel! {
+        didSet {
+            rightHookValue.sizeToFit()
+        }
+    }
+    @IBOutlet weak var rightUppercutValue: UILabel! {
+        didSet {
+            rightUppercutValue.sizeToFit()
+        }
+    }
 
-    @IBOutlet weak var panelTitleLabel: UILabel!
-
+    @IBOutlet weak var panelTitleLabel: UILabel! {
+        didSet {
+            panelTitleLabel.sizeToFit()
+        }
+    }
     @IBOutlet var panelLabelCollection: [UILabel]!
-    
     @IBOutlet var progressViewCollection: [UIProgressView]!
 
+    //var viewModel: SlideOneViewModel!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,7 +68,7 @@ class SlideOneView: UIView {
         xibSetup()
     }
 
-    func setup() {
+    public func setup() {
         let _ = progressViewCollection.enumerated().map {
             ( _, element:UIProgressView) in
             element.trackTintColor = UIColor(Constants.Colours.bgColor)
@@ -52,6 +83,17 @@ class SlideOneView: UIView {
                 element.transform = CGAffineTransform(rotationAngle: CGFloat(rotate))
             }
         }
+
+        self.panelTitleLabel.text = "Type breakdown"
+
+        self.leftJabValue.text = "6"
+        self.leftHookValue.text = "5"
+        self.leftUppercutValue.text = "2"
+
+        self.rightCrossValue.text = "4"
+        self.rightHookValue.text = "2"
+        self.rightUppercutValue.text = "3"
+
     }
 
 }
