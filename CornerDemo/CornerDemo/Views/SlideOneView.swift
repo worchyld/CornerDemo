@@ -54,21 +54,24 @@ class SlideOneView: UIView {
     @IBOutlet var panelLabelCollection: [UILabel]!
     @IBOutlet var progressViewCollection: [UIProgressView]!
 
-    var viewModel: SlideOneViewModel?
+    public private(set) var viewModel: SlideOneViewModel?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
-        //setup()
+        setupView()
     }
 
     required init?(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
-        xibSetup()
     }
 
-    public func setup(viewModel: SlideOneViewModel) {
+    public func setViewModel(viewModel: SlideOneViewModel) {
+        self.viewModel = viewModel
+    }
+
+    private func setupView() {
         let _ = progressViewCollection.enumerated().map {
             ( _, element:UIProgressView) in
             element.trackTintColor = UIColor(Constants.Colours.bgColor)

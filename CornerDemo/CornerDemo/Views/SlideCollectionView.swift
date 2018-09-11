@@ -94,7 +94,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
         if (row == 0) {
             let slide : SlideOneView = SlideOneView()
-            //slide.viewModel = SlideOneViewModel()
+            slide.setViewModel(viewModel: SlideOneViewModel())
             cell.addSubview(slide)
         } else if (row == 2) {
             let slide : SlideTwoView = SlideTwoView()
