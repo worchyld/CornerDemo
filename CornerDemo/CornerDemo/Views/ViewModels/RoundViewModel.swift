@@ -13,11 +13,12 @@ struct RoundViewModel {
     var pageTitle: String
     var roundData: RoundData
     var roundNumber: Int
-    
+    var avg : CalculateAverage
 
     init(withRound round:Int = 1) {
         self.roundNumber = round
         self.pageTitle = NSLocalizedString("pageTitle", tableName: nil, bundle: Bundle.main, value: "Round \(roundNumber)", comment: "Page title")
         self.roundData = RoundData()
+        self.avg = CalculateAverage.init(rounds: self.roundData.rounds)
     }
 }
