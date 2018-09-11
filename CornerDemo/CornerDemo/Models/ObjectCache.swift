@@ -19,13 +19,12 @@ struct ObjectCache {
         return formatter
     }()
 
-
-    static let currencyRateFormatter: NumberFormatter = {
+    static let formattedNumber: NumberFormatter = {
         var numberFormatter = NumberFormatter()
         numberFormatter.locale = Locale(identifier: "en_US")
-        numberFormatter.numberStyle = .currency
+        numberFormatter.numberStyle = .decimal
         numberFormatter.minimumFractionDigits = 0
-        numberFormatter.maximumFractionDigits = 0
+        numberFormatter.maximumFractionDigits = 2
         numberFormatter.alwaysShowsDecimalSeparator = false
         return numberFormatter
     }()

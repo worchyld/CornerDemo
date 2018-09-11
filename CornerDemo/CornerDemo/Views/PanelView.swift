@@ -13,7 +13,7 @@ struct PanelViewModel {
     let title: String
     private let number: Double
     public var formattedNumber: String? {
-        return "99.9"
+        return ObjectCache.formattedNumber.string(for: number)
     }
     let unit: UnitSpeed?
     let change: Int
@@ -51,6 +51,10 @@ class PanelView : UIView {
 
     public func setupView(viewModel: PanelViewModel) {
         self.lblTitle.text = viewModel.title
+
+        self.lblUnit.isHidden = true
+        self.lblFormattedNumber.isHidden = true
+        self.imageView.isHidden = true
 
         if let hasUnit = viewModel.unit {
             self.lblUnit.isHidden = false
