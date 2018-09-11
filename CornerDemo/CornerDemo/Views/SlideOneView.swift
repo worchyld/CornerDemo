@@ -39,8 +39,9 @@ class SlideOneView: UIView {
 
     func setup() {
         let _ = progressViewCollection.enumerated().map {
-            ( index, element) in
-            if (index < 3) {
+            ( _, element:UIProgressView) in
+            element.trackTintColor = UIColor(Constants.Colours.bgColor)
+            if (element.tag < 3) {
                 element.progressTintColor = UIColor(Constants.Colours.green)
             }
             else {
