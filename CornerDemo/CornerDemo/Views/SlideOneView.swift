@@ -10,6 +10,26 @@ import UIKit
 
 struct SlideOneViewModel {
     var field: String = "123"
+
+    struct Left {
+        var jab: Int = 0
+        var hook: Int = 0
+        var uppercut: Int = 0
+    }
+    struct Right {
+        var cross: Int = 0
+        var hook: Int = 0
+        var uppercut: Int = 0
+    }
+
+    let left: Left
+    let right: Right
+
+    init(left: Left, right: Right) {
+        self.left = left
+        self.right = right
+    }
+
 }
 
 class SlideOneView: UIView {

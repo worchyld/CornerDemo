@@ -58,6 +58,13 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     }()
     */
 
+    private lazy var slideOneViewModel: SlideOneViewModel = {
+        let left: SlideOneViewModel.Left = SlideOneViewModel.Left(jab: 6, hook: 5, uppercut: 2)
+        let right: SlideOneViewModel.Right = SlideOneViewModel.Right(cross: 4, hook: 2, uppercut: 3)
+        let viewModel = SlideOneViewModel.init(left: left, right: right)
+        return viewModel
+    }()
+
     override func awakeFromNib() {
         super.awakeFromNib()
         layoutIfNeeded()
@@ -94,15 +101,12 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
         if (row == 0) {
             let slide : SlideOneView = SlideOneView()
-            slide.setViewModel(viewModel: SlideOneViewModel())
+            slide.setViewModel(viewModel: self.slideOneViewModel)
             cell.addSubview(slide)
         } else if (row == 2) {
             let slide : SlideTwoView = SlideTwoView()
             cell.addSubview(slide)
         }
-
-        //let slideView: UIView = slides[row] as UIView
-        //cell.addSubview(slideView)
 
         return cell
     }
