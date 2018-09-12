@@ -22,6 +22,7 @@ struct Constants {
     public static let restTime : TimeInterval = 60.0 // 1 minute
     public static let fightTime : TimeInterval = 180.0 // 3 minutes
     public static let bins: TimeInterval = round(Constants.fightTime / 15)
+    public static let expectedPunches: Float = 8.33
 
     struct Colours {
         public static let bgColor = "#000000"

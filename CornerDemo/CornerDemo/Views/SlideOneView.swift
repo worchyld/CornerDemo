@@ -58,12 +58,13 @@ class SlideOneView: UIView {
     @IBOutlet weak var rightUppercutProgressView: UIProgressView!
     
 
-    var viewModel: RoundViewModel?
+    var viewModel: MainViewModel?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
     }
+
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -75,7 +76,7 @@ class SlideOneView: UIView {
         super.init(coder: aDecoder)
     }
 
-    func setViewModel(model: RoundViewModel) {
+    func setViewModel(model: MainViewModel) {
          self.viewModel = model
 
         guard let hasViewModel = self.viewModel else {
@@ -125,11 +126,11 @@ class SlideOneView: UIView {
             lbl.sizeToFit()
         }
 
-
+        self.animateAllProgressViews()
     }
 
-    override func willMove(toWindow newWindow: UIWindow?) {
-        super.willMove(toWindow: newWindow)
+    private func animateAllProgressViews() {
+        // UIView appear
         waitFor(duration: 0.25) { (completed: Bool) in
             if (completed) {
 
@@ -138,7 +139,9 @@ class SlideOneView: UIView {
 
                     let _ = self.progressViewCollection.map({ (v: UIProgressView) -> Void in
                         print ("v: \(v.tag) \(v.progress)")
-                        v.setProgress(v.progress, animated: true)
+
+                        // NOTE: The v.progress doesn't seem to work when setting progress
+                        v.setProgress(1, animated: true)
 
                     })
                 })

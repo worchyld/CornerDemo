@@ -11,7 +11,7 @@ import CSV
 
 class CSVLoader {
 
-    public static func parseCSV(completionHandler:@escaping (_ success:Bool, _ rounds:[FightRound] ) -> Void) {
+    public static func parseCSV(completionHandler:@escaping (_ success:Bool, _ punches:[Punch] ) -> Void) {
         // pre-load rounds from CSV
 
         guard let filepath = Bundle.main.path(forResource: "Round1", ofType: "csv") else {
@@ -22,7 +22,7 @@ class CSVLoader {
         let stream = InputStream(fileAtPath: filepath)!
         let csv = try! CSVReader(stream: stream, hasHeaderRow: true, trimFields: true, delimiter: ",", whitespaces: NSCharacterSet.whitespaces)
 
-        var rounds: [FightRound] = [FightRound]()
+        var punches: [Punch] = [Punch]()
 
         while csv.next() != nil {
 
@@ -46,11 +46,12 @@ class CSVLoader {
             let power : Double = (Double(str_power_g))!
 
             //  Add round
-            rounds.append( FightRound(ts: tsInterval, punch_type_id: punch_type_id, speed: speed, power: power) )
+            //rounds.append( FightRound(ts: tsInterval, punch_type_id: punch_type_id, speed: speed, power: power) )
+            punches.append( Punch(ts: tsInterval, punch_type_id: punch_type_id, speed: speed, power: power) )
         }
 
-        //print (rounds.description)
+        //print (punches.description)
 
-        completionHandler(true, rounds)
+        completionHandler(true, punches)
     }
 }

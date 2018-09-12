@@ -1,5 +1,5 @@
 //
-//  Round.swift
+//  Punch.swift
 //  CornerDemo
 //
 //  Created by Amarjit on 06/09/2018.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol FightRoundProtocol {
+protocol PunchProtocol {
     var ts: TimeInterval { get }
     var punch_type_id : Int { get }
     var speed : Double { get }
     var power : Double { get }
 }
 
-struct FightRound : CustomStringConvertible, FightRoundProtocol {
+struct Punch : CustomStringConvertible, PunchProtocol {
     public private (set) var ts: TimeInterval
     public private (set) var punch_type_id: Int
     public private (set) var speed: Double
@@ -29,7 +29,7 @@ struct FightRound : CustomStringConvertible, FightRoundProtocol {
     }
 }
 
-extension FightRound {
+extension Punch {
     var description: String {
         return ("Round: \(String(describing: ts)), \(punch_type_id), \(speed), \(power)\n")
     }

@@ -36,35 +36,35 @@ struct PunchModel : CustomStringConvertible {
     }
 }
 
-// ViewModel for page
-class RoundViewModel {
+// Main ViewModel
+class MainViewModel {
     var pageTitle: String
-    var rounds : [FightRound]!
+    var punches : [Punch]!
     var roundNumber: Int = 0
     var punch: PunchModel!
 
-    lazy var punches : Int = {
-        return self.rounds.count
+    lazy var totalPunches : Int = {
+        return self.punches.count
     }()
 
     lazy var power : Double = {
-        let powerTotal = self.rounds.reduce(0) {
+        let powerTotal = punches.reduce(0) {
             $0 + ($1.power)
         }
-        if ((powerTotal == 0) || (self.rounds.count == 0)) {
+        if ((powerTotal == 0) || (self.punches.count == 0)) {
             return 0
         }
-        return (powerTotal / Double(rounds.count))
+        return (powerTotal / Double(punches.count))
     }()
 
     lazy var speed : Double = {
-        let speedTotal = self.rounds.reduce(0) {
+        let speedTotal = punches.reduce(0) {
             $0 + ($1.speed)
         }
-        if ((speedTotal == 0) || (self.rounds.count == 0)) {
+        if ((speedTotal == 0) || (punches.count == 0)) {
             return 0
         }
-        return (speedTotal / Double(rounds.count))
+        return (speedTotal / Double(punches.count))
     }()
 
     let maxProgress: Float = 20
@@ -80,9 +80,9 @@ class RoundViewModel {
         print (self.punch.description)
     }
 
-    func find(punch_type_id: Int) -> [FightRound] {
-        let results = self.rounds.filter { (fr: FightRound) -> Bool in
-            return (fr.punch_type_id == punch_type_id)
+    func find(punch_type_id: Int) -> [Punch] {
+        let results = self.punches.filter { (p: Punch) -> Bool in
+            return (p.punch_type_id == punch_type_id)
         }
         return results
     }
@@ -90,9 +90,9 @@ class RoundViewModel {
 
     // MARK: (Private) functions
     private func loadCSV() {
-        CSVLoader.parseCSV { (completed: Bool, rounds:[FightRound]) -> Void in
+        CSVLoader.parseCSV { (completed: Bool, punches:[Punch]) -> Void in
             if (completed) {
-                self.rounds = rounds
+                self.punches = punches
                 self.preparePunchModel()
             }
             else {

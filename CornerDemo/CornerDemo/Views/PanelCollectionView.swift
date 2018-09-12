@@ -15,7 +15,7 @@ private let reuseIdentifier = "panelCellId"
 class PanelCollectionView: UIView, UICollectionViewDelegate,
     UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    var viewModel: RoundViewModel!
+    var viewModel: MainViewModel!
 
     private lazy var flowLayout : UICollectionViewFlowLayout = {
         let f = UICollectionViewFlowLayout()
@@ -73,8 +73,8 @@ class PanelCollectionView: UIView, UICollectionViewDelegate,
         switch atIndexPath.row {
         case 0:
             print ("Punches: \(self.viewModel.punches)")
-            
-            let model = PanelViewModel(title: "Punches", number: Double(self.viewModel.punches), unit: nil)
+            // total punches label
+            let model = PanelViewModel(title: "Punches", number: Double(self.viewModel.totalPunches), unit: nil)
             view.setupView(viewModel: model)
             break
 

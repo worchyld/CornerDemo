@@ -30,14 +30,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return view
     }()
 
-    var viewModel: RoundViewModel!
+    var viewModel: MainViewModel!
     @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         DispatchQueue.global(qos:.userInteractive).async {
-            self.viewModel = RoundViewModel()
+            self.viewModel = MainViewModel()
 
             DispatchQueue.main.async {
                 self.setupView()
