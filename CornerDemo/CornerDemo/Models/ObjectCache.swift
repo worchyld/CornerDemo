@@ -13,6 +13,7 @@ struct ObjectCache {
     static let dateComponentsFormatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .positional
+        formatter.calendar = Calendar.current
         formatter.allowedUnits = [ .hour, .minute, .second, .nanosecond ]
         formatter.zeroFormattingBehavior = [ .pad ]
         //let formatted = formatter.string(from: ts)

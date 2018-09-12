@@ -24,6 +24,8 @@ class ToolbarView: UIView, TickerDelegate {
     @IBOutlet weak var lblDuration: UILabel!
     @IBOutlet weak var lblFightState: UILabel!
 
+    var timeInterval : TimeInterval = TimeInterval.init(Constants.fightTime)
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
@@ -47,8 +49,21 @@ class ToolbarView: UIView, TickerDelegate {
         self.addSubscriber(self.timerViewModel)
         self.timerViewModel.addSubscriber(self) // addSubscriber to timerObserver
 
+        self.fightDurationTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgressView), userInfo: nil, repeats: true)
+
         xibSetup()
     }
+
+    @objc func updateProgressView() {
+        let max: Float = Float(Constants.fightTime) as Float
+        self.progressView.progress -= 1.0 / max
+        if (self.progressView.progress <= 0) {
+            self.fightDurationTimer.invalidate()
+        }
+        self.lblDuration.text = "\(self.timeInterval)"
+        self.lblDuration.sizeToFit()
+    }
+
 
     @IBAction func playBtnDidPress(_ sender: Any) {
         toggleFightState()
