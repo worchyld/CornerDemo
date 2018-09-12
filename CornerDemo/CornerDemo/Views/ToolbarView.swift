@@ -13,11 +13,12 @@ protocol ToolbarViewDelegate {
 }
 
 
-class ToolbarView: UIView {
+class ToolbarView: UIView, TickerDelegate {
     public fileprivate (set) var subscribers: [ToolbarViewDelegate] = []
 
     private var fightState : FightState = FightState.rest
     private var timerViewModel: TimerViewModel = TimerViewModel.init()
+    private var fightDurationTimer: Timer = Timer()
 
     @IBOutlet weak var progressView : UIProgressView!
     @IBOutlet weak var playBtn: UIButton!
@@ -37,6 +38,7 @@ class ToolbarView: UIView {
     deinit {
         self.removeSubscribers()
         self.timerViewModel.stopTimer()
+        self.fightDurationTimer.invalidate()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -44,6 +46,7 @@ class ToolbarView: UIView {
         super.init(coder: aDecoder)
 
         self.addSubscriber(self.timerViewModel)
+        self.timerViewModel.addSubscriber(self) // addSubscriber to timerObserver
 
         xibSetup()
     }
@@ -68,7 +71,6 @@ class ToolbarView: UIView {
 }
 
 extension ToolbarView {
-    
     func addSubscriber(_ subscriber: ToolbarViewDelegate) {
         self.subscribers.append(subscriber)
     }
@@ -84,6 +86,11 @@ extension ToolbarView {
     private func removeSubscribers() {
         self.subscribers.removeAll()
     }
-
 }
 
+
+extension ToolbarView {
+    func didUpdate(_ tickState: TickState) {
+        print ("TICK STATE DID CHANGE: \(tickState)")
+    }
+}
