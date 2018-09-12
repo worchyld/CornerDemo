@@ -12,8 +12,10 @@ import SideMenu
 
 private let reuseIdentifier = "CellId"
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, ToolbarViewDelegate {
 
+    var viewModel: MainViewModel!
+    
     private lazy var graphView: GraphView = {
         let view = GraphView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150))
         return view
@@ -30,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return view
     }()
 
-    var viewModel: MainViewModel!
+
     @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
@@ -106,6 +108,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
 }
+
+extension ViewController {
+    // MARK: Toolbar delegate method
+    func didPressButton(state: FightState) {
+        print ("vc > pressed pressed \(state)")
+    }
+}
+
 
 
 
