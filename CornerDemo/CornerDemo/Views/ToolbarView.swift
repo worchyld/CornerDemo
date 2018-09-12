@@ -12,7 +12,6 @@ protocol ToolbarViewDelegate {
     func didPressButton(state: FightState)
 }
 
-
 class ToolbarView: UIView, TickerDelegate {
     public fileprivate (set) var subscribers: [ToolbarViewDelegate] = []
 
@@ -52,11 +51,15 @@ class ToolbarView: UIView, TickerDelegate {
     }
 
     @IBAction func playBtnDidPress(_ sender: Any) {
-        self.toggleFightState()
-        self.notifySubscribers()
+        toggleFightState()
     }
 
     private func toggleFightState() {
+        handleToggle()
+        self.notifySubscribers()
+    }
+
+    private func handleToggle() {
         self.playBtn.isSelected = !self.playBtn.isSelected
         if (self.fightState == .fight) {
             self.fightState = .rest
@@ -92,5 +95,36 @@ extension ToolbarView {
 extension ToolbarView {
     func didUpdate(_ tickState: TickState) {
         print ("TICK STATE DID CHANGE: \(tickState)")
+
+        switch tickState {
+        case .didStart:
+            didStart()
+            break
+
+        case .didTick:
+            didTick()
+            break
+
+        case .didStop:
+            didStop()
+            break
+        }
     }
+
+    func didStart() {
+        //self.progressView.setProgress(1.0, animated: true)
+    }
+
+    func didStop() {
+        //self.toggleFightState()
+    }
+
+    func didTick() {
+        /*
+        self.progressView.progress -= (0.1 / Float(Constants.fightTime))
+        if (self.progressView.progress <= 0) {
+            toggleFightState()
+        }*/
+    }
+
 }

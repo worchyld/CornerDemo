@@ -18,6 +18,9 @@ enum TickState : Int {
 
 protocol TickerDelegate {
     func didUpdate(_ tickState: TickState)
+    func didStop()
+    func didStart()
+    func didTick()
 }
 
 class TimerViewModel : ToolbarViewDelegate {
