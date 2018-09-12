@@ -10,8 +10,6 @@ import UIKit
 
 class SlideOneView: UIView {
 
-    private let maxProgressValue : Float = 20.0
-
     @IBOutlet weak var leftJabValue: UILabel! {
         didSet {
             leftJabValue.sizeToFit()
@@ -65,10 +63,6 @@ class SlideOneView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
-        /*
-        UIView.animate(withDuration: 1.0, animations: { () -> Void in
-
-        })*/
     }
 
     override init(frame: CGRect) {
@@ -87,11 +81,11 @@ class SlideOneView: UIView {
         guard let hasViewModel = self.viewModel else {
             return
         }
+        let maxProgressValue = hasViewModel.maxProgress
 
         self.leftJabProgressView.progress = (Float(hasViewModel.punch.left.jab) / maxProgressValue)
         self.leftHookProgressView.progress = (Float(hasViewModel.punch.left.hook) / maxProgressValue)
         self.leftUppercutProgressView.progress = (Float(hasViewModel.punch.left.hook) / maxProgressValue)
-
         self.rightCrossProgressView.progress = (Float(hasViewModel.punch.left.hook) / maxProgressValue)
 
 
@@ -102,13 +96,14 @@ class SlideOneView: UIView {
         self.rightCrossValue.text = String(hasViewModel.punch.right.cross)
         self.rightHookValue.text = String(hasViewModel.punch.right.hook)
         self.rightUppercutValue.text = String(hasViewModel.punch.right.uppercut)
+
+        self.layoutSubviews()
     }
 
     private func setupView() {
         let _ = progressViewCollection.enumerated().map {
             ( _, element:UIProgressView) in
             element.trackTintColor = UIColor(Constants.Colours.bgColor)
-            element.setProgress(1, animated: true)
 
             if (element.tag < 3) {
                 element.progressTintColor = UIColor(Constants.Colours.green)
@@ -121,6 +116,34 @@ class SlideOneView: UIView {
         }
 
         self.panelTitleLabel.text = NSLocalizedString("Type breakdown", comment: "Slide title")
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        let _ = self.panelLabelCollection.map { (lbl: UILabel) -> Void in
+            lbl.sizeToFit()
+        }
+
+
+    }
+
+    override func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
+        waitFor(duration: 0.25) { (completed: Bool) in
+            if (completed) {
+
+                UIView.animate(withDuration: 1.25, animations: { () -> Void in
+                    print ("animating")
+
+                    let _ = self.progressViewCollection.map({ (v: UIProgressView) -> Void in
+                        print ("v: \(v.tag) \(v.progress)")
+                        v.setProgress(v.progress, animated: true)
+
+                    })
+                })
+            }
+        }
     }
 
 }

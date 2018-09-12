@@ -125,4 +125,9 @@ extension UIView {
     }
 }
 
-
+func waitFor(duration: TimeInterval, callback: @escaping (Bool) -> ()) {
+    let when = DispatchTime.now() + duration
+    DispatchQueue.main.asyncAfter(deadline: when) {
+        callback(true)
+    }
+}

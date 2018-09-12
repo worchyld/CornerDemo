@@ -67,6 +67,9 @@ class RoundViewModel {
         return (speedTotal / Double(rounds.count))
     }()
 
+    let maxProgress: Float = 20
+    
+
     // MARK: Main functions
 
     init() {

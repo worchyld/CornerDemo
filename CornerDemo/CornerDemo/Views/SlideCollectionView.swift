@@ -77,10 +77,6 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
         // Configure the cell
-        cell.backgroundColor = .red
-        cell.layer.borderColor = UIColor.yellow.cgColor
-        cell.layer.borderWidth = 1
-
         configure(cell: cell, indexPath: indexPath)
 
         return cell
@@ -93,6 +89,7 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
             let slide : SlideOneView = SlideOneView()
             slide.setViewModel(model: self.viewModel)
             cell.addSubview(slide)
+            cell.layoutSubviews()
         } else if (row == 1) {
             let slide : SlideTwoView = SlideTwoView()
             cell.addSubview(slide)
