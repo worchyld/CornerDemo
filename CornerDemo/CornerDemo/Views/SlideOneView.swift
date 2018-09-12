@@ -10,6 +10,8 @@ import UIKit
 
 class SlideOneView: UIView {
 
+    private let maxProgressValue : Float = 20.0
+
     @IBOutlet weak var leftJabValue: UILabel! {
         didSet {
             leftJabValue.sizeToFit()
@@ -50,6 +52,14 @@ class SlideOneView: UIView {
     @IBOutlet var panelLabelCollection: [UILabel]!
     @IBOutlet var progressViewCollection: [UIProgressView]!
 
+    @IBOutlet weak var leftJabProgressView: UIProgressView!
+    @IBOutlet weak var leftHookProgressView: UIProgressView!
+    @IBOutlet weak var leftUppercutProgressView: UIProgressView!
+    @IBOutlet weak var rightCrossProgressView: UIProgressView!
+    @IBOutlet weak var rightHookProgressView: UIProgressView!
+    @IBOutlet weak var rightUppercutProgressView: UIProgressView!
+    
+
     var viewModel: RoundViewModel?
 
     override func awakeFromNib() {
@@ -78,10 +88,12 @@ class SlideOneView: UIView {
             return
         }
 
-        let _ = progressViewCollection.map {
-            $0.setProgress(1, animated: true)
-            $0.progress = 0.0
-        }
+        self.leftJabProgressView.progress = (Float(hasViewModel.punch.left.jab) / maxProgressValue)
+        self.leftHookProgressView.progress = (Float(hasViewModel.punch.left.hook) / maxProgressValue)
+        self.leftUppercutProgressView.progress = (Float(hasViewModel.punch.left.hook) / maxProgressValue)
+
+        self.rightCrossProgressView.progress = (Float(hasViewModel.punch.left.hook) / maxProgressValue)
+
 
         self.leftJabValue.text = String(hasViewModel.punch.left.jab)
         self.leftHookValue.text = String(hasViewModel.punch.left.hook)
@@ -96,6 +108,8 @@ class SlideOneView: UIView {
         let _ = progressViewCollection.enumerated().map {
             ( _, element:UIProgressView) in
             element.trackTintColor = UIColor(Constants.Colours.bgColor)
+            element.setProgress(1, animated: true)
+
             if (element.tag < 3) {
                 element.progressTintColor = UIColor(Constants.Colours.green)
             }

@@ -12,12 +12,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlideOneView" customModule="CornerDemo" customModuleProvider="target">
             <connections>
+                <outlet property="leftHookProgressView" destination="oD8-zF-8KU" id="ei1-41-D1H"/>
                 <outlet property="leftHookValue" destination="COI-02-Wzw" id="paO-Pk-QL3"/>
+                <outlet property="leftJabProgressView" destination="J63-Tj-Fut" id="SNr-Ri-r6P"/>
                 <outlet property="leftJabValue" destination="wxP-zR-OQO" id="rGO-Lq-kpT"/>
+                <outlet property="leftUppercutProgressView" destination="eR7-f2-AYK" id="Yb9-YF-sKH"/>
                 <outlet property="leftUppercutValue" destination="bez-33-AX5" id="wMf-nY-Euy"/>
                 <outlet property="panelTitleLabel" destination="dRF-Cc-T2d" id="Dub-GV-iUt"/>
+                <outlet property="rightCrossProgressView" destination="hCD-da-sqg" id="0fx-Ty-jk2"/>
                 <outlet property="rightCrossValue" destination="1aI-6z-g1U" id="ccT-UK-sX8"/>
+                <outlet property="rightHookProgressView" destination="U66-1f-V3v" id="98Z-Zg-6mK"/>
                 <outlet property="rightHookValue" destination="Mdq-Mb-Ib6" id="CCn-d5-ufn"/>
+                <outlet property="rightUppercutProgressView" destination="RU2-NX-T83" id="ksH-Cj-Pqx"/>
                 <outlet property="rightUppercutValue" destination="1qv-8K-mfI" id="oDS-Mc-uWd"/>
                 <outletCollection property="panelLabelCollection" destination="wxP-zR-OQO" collectionClass="NSMutableArray" id="6Z4-AZ-8ff"/>
                 <outletCollection property="panelLabelCollection" destination="COI-02-Wzw" collectionClass="NSMutableArray" id="Ay2-fO-eDW"/>
