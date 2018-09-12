@@ -55,6 +55,10 @@ class SlideOneView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
+        /*
+        UIView.animate(withDuration: 1.0, animations: { () -> Void in
+
+        })*/
     }
 
     override init(frame: CGRect) {
@@ -72,6 +76,11 @@ class SlideOneView: UIView {
 
         guard let hasViewModel = self.viewModel else {
             return
+        }
+
+        let _ = progressViewCollection.map {
+            $0.setProgress(1, animated: true)
+            $0.progress = 0.0
         }
 
         self.leftJabValue.text = String(hasViewModel.punch.left.jab)
@@ -92,9 +101,8 @@ class SlideOneView: UIView {
             }
             else {
                 element.progressTintColor = UIColor(Constants.Colours.blue)
-                //element.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI));
-                let rotate = -(Double.pi)
-                element.transform = CGAffineTransform(rotationAngle: CGFloat(rotate))
+                let rotationAngle = -(Double.pi)
+                element.transform = CGAffineTransform(rotationAngle: CGFloat(rotationAngle))
             }
         }
 

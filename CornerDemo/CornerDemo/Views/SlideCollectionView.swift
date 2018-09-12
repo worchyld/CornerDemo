@@ -56,7 +56,6 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         super.init(frame: frame)
         self.addSubview(collectionView)
         self.addSubview(pageControl)
-
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -69,7 +68,6 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         return 1
     }
 
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
@@ -79,18 +77,27 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
         // Configure the cell
+        cell.backgroundColor = .red
+        cell.layer.borderColor = UIColor.yellow.cgColor
+        cell.layer.borderWidth = 1
+
+        configure(cell: cell, indexPath: indexPath)
+
+        return cell
+    }
+
+    func configure(cell: UICollectionViewCell, indexPath: IndexPath) {
         let row = indexPath.row
 
         if (row == 0) {
             let slide : SlideOneView = SlideOneView()
             slide.setViewModel(model: self.viewModel)
             cell.addSubview(slide)
-        } else if (row == 2) {
+        } else if (row == 1) {
             let slide : SlideTwoView = SlideTwoView()
             cell.addSubview(slide)
         }
 
-        return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

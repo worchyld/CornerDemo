@@ -11,10 +11,14 @@ import UIKit
 class SlideTwoView: UIView {
 
     lazy var label: UILabel = {
-        let frame = CGRect(x: 20, y: 20, width: 55, height: 20)
+        let xPos = 20
+        let yPos = 20
+        let frame = CGRect(x: xPos, y: yPos, width: self.frame.width, height: 25)
         let lbl = UILabel(frame: frame)
         lbl.text = NSLocalizedString("Empty slide", comment: "Empty slide")
         lbl.textColor = .white
+        lbl.layer.borderWidth = 1
+        lbl.layer.borderColor = UIColor.white.cgColor
         lbl.sizeToFit()
         return lbl
     }()
