@@ -12,10 +12,12 @@ protocol ToolbarViewDelegate {
     func didPressButton(state: FightState)
 }
 
-class ToolbarView: UIView, ToolbarViewDelegate {
+
+class ToolbarView: UIView {
     public fileprivate (set) var subscribers: [ToolbarViewDelegate] = []
 
     private var fightState : FightState = FightState.rest
+    private var timerViewModel: TimerViewModel = TimerViewModel.init()
 
     @IBOutlet weak var progressView : UIProgressView!
     @IBOutlet weak var playBtn: UIButton!
@@ -34,13 +36,15 @@ class ToolbarView: UIView, ToolbarViewDelegate {
 
     deinit {
         self.removeSubscribers()
+        self.timerViewModel.stopTimer()
     }
 
     required init?(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
-        self.addSubscriber(ViewController())
-        self.addSubscriber(self)
+
+        self.addSubscriber(self.timerViewModel)
+
         xibSetup()
     }
 
@@ -57,12 +61,10 @@ class ToolbarView: UIView, ToolbarViewDelegate {
         else {
             self.fightState = .fight
         }
-    }
-
-    func didPressButton(state: FightState) {
-        self.lblFightState.text = state.rawValue.capitalizingFirstLetter()
+        self.lblFightState.text = self.fightState.rawValue.capitalizingFirstLetter()
         self.lblFightState.sizeToFit()
     }
+
 }
 
 extension ToolbarView {

@@ -135,10 +135,8 @@ class SlideOneView: UIView {
             if (completed) {
 
                 UIView.animate(withDuration: 1.25, animations: { () -> Void in
-                    print ("animating")
-
                     let _ = self.progressViewCollection.map({ (v: UIProgressView) -> Void in
-                        print ("v: \(v.tag) \(v.progress)")
+                        //print ("v: \(v.tag) \(v.progress)")
 
                         // NOTE: The v.progress doesn't seem to work when setting progress
                         v.setProgress(1, animated: true)
