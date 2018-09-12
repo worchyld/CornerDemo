@@ -22,6 +22,10 @@ class ViewControllerViewModel {
         loadSounds()
     }
 
+    deinit {
+        self.stopTimer()
+    }
+
     private func loadSounds() {
         do {
             audioPlayer = try AVAudioPlayer.init(contentsOf: self.tickSound as URL)
