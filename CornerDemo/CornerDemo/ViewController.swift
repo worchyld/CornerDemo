@@ -8,12 +8,47 @@
 
 import UIKit
 import SideMenu
-
+import AVFoundation
+import AudioToolbox
 
 private let reuseIdentifier = "CellId"
 
+class ViewControllerViewModel {
+    var timer = Timer()
+    var audioPlayer = AVAudioPlayer()
+    let tickSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "tick", ofType: "wav")!)
+
+    init() {
+        loadSounds()
+    }
+
+    private func loadSounds() {
+        do {
+            audioPlayer = try AVAudioPlayer.init(contentsOf: self.tickSound as URL)
+            audioPlayer.prepareToPlay()
+        } catch {
+            print("Error getting the audio file")
+        }
+    }
+
+    func stopTimer() {
+        self.timer.invalidate()
+        self.audioPlayer.stop()
+    }
+
+    func startTimer() {
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgress), userInfo: nil, repeats: true)
+    }
+
+    @objc func updateProgress() {
+        self.audioPlayer.play()
+    }
+
+}
+
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, ToolbarViewDelegate {
 
+    var viewControllerModel : ViewControllerViewModel = ViewControllerViewModel()
     var viewModel: MainViewModel!
     
     private lazy var graphView: GraphView = {
@@ -109,11 +144,23 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
 }
 
+// MARK: Toolbar delegate method
 extension ViewController {
-    // MARK: Toolbar delegate method
     func didPressButton(state: FightState) {
-        print ("vc > pressed pressed \(state)")
+        // start/pause timer
+        switch state {
+        case .rest:
+            self.viewControllerModel.stopTimer()
+            break
+        case .fight:
+            self.viewControllerModel.startTimer()
+            break
+        }
     }
+}
+
+// MARK: Sounds and Timer related
+extension ViewController {
 }
 
 

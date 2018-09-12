@@ -45,11 +45,12 @@ class ToolbarView: UIView, ToolbarViewDelegate {
     }
 
     @IBAction func playBtnDidPress(_ sender: Any) {
-        self.updateFightState()
+        self.toggleFightState()
         self.notifySubscribers()
     }
 
-    private func updateFightState() {
+    private func toggleFightState() {
+        self.playBtn.isSelected = !self.playBtn.isSelected
         if (self.fightState == .fight) {
             self.fightState = .rest
         }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		475BD049745679C7A0088514 /* Pods_CornerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3D17990703FFF490AF024 /* Pods_CornerDemo.framework */; };
 		4D5E826C21493C1000ED7DA8 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E826B21493C1000ED7DA8 /* CustomProgressView.swift */; };
+		4D5E826F21495DD700ED7DA8 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5E826E21495DD700ED7DA8 /* tick.wav */; };
 		4D77714D2146BF9300B9C26F /* PanelCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77714C2146BF9300B9C26F /* PanelCollectionView.swift */; };
 		4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80055E2143BE14002044E5 /* ToolbarView.swift */; };
 		4D8005612143BE49002044E5 /* ToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8005602143BE49002044E5 /* ToolbarView.xib */; };
@@ -160,6 +161,7 @@
 		02E3D17990703FFF490AF024 /* Pods_CornerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CornerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B289F5B2D6D733F8886FB9 /* Pods-CornerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4D5E826B21493C1000ED7DA8 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
+		4D5E826E21495DD700ED7DA8 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
 		4D77714C2146BF9300B9C26F /* PanelCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCollectionView.swift; sourceTree = "<group>"; };
 		4D80055E2143BE14002044E5 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		4D8005602143BE49002044E5 /* ToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolbarView.xib; sourceTree = "<group>"; };
@@ -328,6 +330,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4D5E826D21495DC500ED7DA8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4D5E826E21495DD700ED7DA8 /* tick.wav */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		4D83F58721414D380036FE28 = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +361,7 @@
 		4D83F59221414D380036FE28 /* CornerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D5E826D21495DC500ED7DA8 /* Audio */,
 				4D83F5DA214177BC0036FE28 /* Fonts */,
 				4D83F5B521414DE70036FE28 /* CSV */,
 				4D83F59321414D380036FE28 /* AppDelegate.swift */,
@@ -745,6 +756,7 @@
 				4D83F68B214177BC0036FE28 /* Fontfabric - Intro Regular Italic.ttf in Resources */,
 				4D83F654214177BC0036FE28 /* Fontfabric - IntroBlackInlineCaps.otf in Resources */,
 				4D83F696214177BC0036FE28 /* Fontfabric - Intro Cond Bold Caps.ttf in Resources */,
+				4D5E826F21495DD700ED7DA8 /* tick.wav in Resources */,
 				4D83F69B214177BC0036FE28 /* Fontfabric - Intro Black Italic.ttf in Resources */,
 				4D83F644214177BC0036FE28 /* Fontfabric - IntroCondSemiBoldItalic.otf in Resources */,
 				4D83F68C214177BC0036FE28 /* Fontfabric - Intro Cond Thin Alt.ttf in Resources */,
