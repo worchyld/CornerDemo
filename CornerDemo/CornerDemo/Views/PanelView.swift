@@ -54,7 +54,6 @@ class PanelView : UIView {
 
         self.lblUnit.isHidden = true
         self.lblFormattedNumber.isHidden = true
-        self.imageView.isHidden = true
 
         if let hasUnit = viewModel.unit {
             self.lblUnit.isHidden = false
