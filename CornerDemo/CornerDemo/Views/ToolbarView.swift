@@ -8,16 +8,11 @@
 
 import UIKit
 
-protocol ToolbarViewDelegate {
-    func didPressButton(state: FightState)
-}
-
 class ToolbarView: UIView, TickerDelegate {
     public fileprivate (set) var subscribers: [ToolbarViewDelegate] = []
 
     private var fightState : FightState = FightState.rest
-    private var timerViewModel: TimerViewModel = TimerViewModel.init()
-    private var fightDurationTimer: Timer = Timer()
+    private var timerModel: TimerModel = TimerModel(with: Constants.fightTime)
 
     @IBOutlet weak var progressView : UIProgressView!
     @IBOutlet weak var playBtn: UIButton!
@@ -29,6 +24,7 @@ class ToolbarView: UIView, TickerDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layoutIfNeeded()
+        self.progressView.progress = 1
     }
 
     override init(frame: CGRect) {
@@ -38,29 +34,21 @@ class ToolbarView: UIView, TickerDelegate {
 
     deinit {
         self.removeSubscribers()
-        self.timerViewModel.stopTimer()
-        self.fightDurationTimer.invalidate()
+        self.timerModel.stopTimer()
     }
 
     required init?(coder aDecoder: NSCoder) {
         //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
 
-        self.addSubscriber(self.timerViewModel)
-        self.timerViewModel.addSubscriber(self) // addSubscriber to timerObserver
-
-        self.fightDurationTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateProgressView), userInfo: nil, repeats: true)
+        self.addSubscriber(self.timerModel)
+        self.timerModel.addSubscriber(self) // addSubscriber to timerObserver
 
         xibSetup()
     }
 
-    @objc func updateProgressView() {
-        let max: Float = Float(Constants.fightTime) as Float
-        self.progressView.progress -= 1.0 / max
-        if (self.progressView.progress <= 0) {
-            self.fightDurationTimer.invalidate()
-        }
-        self.lblDuration.text = "\(self.timeInterval)"
+    @objc func updateDurationText(time: TimeInterval) {
+        self.lblDuration.text = ObjectCache.stopWatchFormatter.string(from: time)
         self.lblDuration.sizeToFit()
     }
 
@@ -94,7 +82,6 @@ extension ToolbarView {
     }
 
     func notifySubscribers() {
-        print ("notifying \(self.subscribers.count) subscribers")
         let _ = self.subscribers.map({
             print ("Notified")
             $0.didPressButton(state: self.fightState)
@@ -109,8 +96,6 @@ extension ToolbarView {
 
 extension ToolbarView {
     func didUpdate(_ tickState: TickState) {
-        print ("TICK STATE DID CHANGE: \(tickState)")
-
         switch tickState {
         case .didStart:
             didStart()
@@ -127,19 +112,21 @@ extension ToolbarView {
     }
 
     func didStart() {
-        //self.progressView.setProgress(1.0, animated: true)
+        let time = self.timerModel.elaspedTime
+        self.updateDurationText(time: time)
+        self.progressView.progress = 1.0
     }
 
     func didStop() {
-        //self.toggleFightState()
     }
 
     func didTick() {
-        /*
-        self.progressView.progress -= (0.1 / Float(Constants.fightTime))
-        if (self.progressView.progress <= 0) {
-            toggleFightState()
-        }*/
+        let time = self.timerModel.elaspedTime
+        self.updateDurationText(time: time)
+
+        if (time > 0) {
+            self.progressView.progress -= (0.01 / 1)
+        }
     }
 
 }

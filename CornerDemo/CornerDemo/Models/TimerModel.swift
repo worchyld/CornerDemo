@@ -10,6 +10,10 @@ import Foundation
 import AVFoundation
 import AudioToolbox
 
+protocol ToolbarViewDelegate {
+    func didPressButton(state: FightState)
+}
+
 enum TickState : Int {
     case didStop  // Timer stopped
     case didStart // Timer started
@@ -23,14 +27,18 @@ protocol TickerDelegate {
     func didTick()
 }
 
-class TimerViewModel : ToolbarViewDelegate {
+class TimerModel : ToolbarViewDelegate {
     public fileprivate (set) var subscribers: [TickerDelegate] = []
 
+    public private(set) var _initTime: TimeInterval
+    var elaspedTime: TimeInterval
     var timer = Timer()
     var audioPlayer = AVAudioPlayer()
     let tickSound = NSURL(fileURLWithPath: Bundle.main.path(forResource: "tick", ofType: "wav")!)
 
-    init() {
+    init(with time: TimeInterval) {
+        self._initTime = time
+        self.elaspedTime = time
         loadSounds()        
     }
 
@@ -55,17 +63,36 @@ class TimerViewModel : ToolbarViewDelegate {
     }
 
     func startTimer() {
-        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.playTickSound), userInfo: nil, repeats: true)
+        self.resetElaspedTime()
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
         self.notifySubscribers(tickState: .didStart)
     }
 
-    @objc func playTickSound() {
+    @objc func updateTimer() {
+        if (self.elaspedTime > TimeInterval.init(0)) {
+            self.elaspedTime -= TimeInterval.init(1)
+            playSound()
+            self.notifySubscribers(tickState: .didTick)
+        }
+        else {
+            stopTimer()
+        }
+    }
+
+    private func playSound() {
         self.audioPlayer.play()
-        self.notifySubscribers(tickState: .didTick)
+    }
+
+    private func resetElaspedTime() {
+        if (self._initTime > Double(0)) {
+            self.elaspedTime = self._initTime
+        } else {
+            self.elaspedTime = Constants.fightTime
+        }
     }
 }
 
-extension TimerViewModel {
+extension TimerModel {
     func didPressButton(state: FightState) {
         print ("Did press state: \(state)")
         // start/pause timer
@@ -84,15 +111,13 @@ extension TimerViewModel {
 
 
 // Ticker subscirption
-extension TimerViewModel {
+extension TimerModel {
 
     func addSubscriber(_ subscriber: TickerDelegate) {
         self.subscribers.append(subscriber)
     }
 
     func notifySubscribers(tickState: TickState) {
-        print ("notifying \(self.subscribers.count) subscribers of state: \(tickState.rawValue)")
-
         let _ = self.subscribers.map({
             $0.didUpdate(tickState)
         })

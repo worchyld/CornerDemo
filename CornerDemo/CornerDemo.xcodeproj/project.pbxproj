@@ -10,8 +10,8 @@
 		475BD049745679C7A0088514 /* Pods_CornerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E3D17990703FFF490AF024 /* Pods_CornerDemo.framework */; };
 		4D5E826C21493C1000ED7DA8 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E826B21493C1000ED7DA8 /* CustomProgressView.swift */; };
 		4D5E826F21495DD700ED7DA8 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D5E826E21495DD700ED7DA8 /* tick.wav */; };
-		4D5E82712149671C00ED7DA8 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E82702149671C00ED7DA8 /* TimerViewModel.swift */; };
-		4D5E82722149672B00ED7DA8 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E82702149671C00ED7DA8 /* TimerViewModel.swift */; };
+		4D5E82712149671C00ED7DA8 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E82702149671C00ED7DA8 /* TimerModel.swift */; };
+		4D5E82722149672B00ED7DA8 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E82702149671C00ED7DA8 /* TimerModel.swift */; };
 		4D77714D2146BF9300B9C26F /* PanelCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77714C2146BF9300B9C26F /* PanelCollectionView.swift */; };
 		4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D80055E2143BE14002044E5 /* ToolbarView.swift */; };
 		4D8005612143BE49002044E5 /* ToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8005602143BE49002044E5 /* ToolbarView.xib */; };
@@ -164,7 +164,7 @@
 		43B289F5B2D6D733F8886FB9 /* Pods-CornerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CornerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CornerDemo/Pods-CornerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4D5E826B21493C1000ED7DA8 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		4D5E826E21495DD700ED7DA8 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
-		4D5E82702149671C00ED7DA8 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		4D5E82702149671C00ED7DA8 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		4D77714C2146BF9300B9C26F /* PanelCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelCollectionView.swift; sourceTree = "<group>"; };
 		4D80055E2143BE14002044E5 /* ToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		4D8005602143BE49002044E5 /* ToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolbarView.xib; sourceTree = "<group>"; };
@@ -401,6 +401,7 @@
 		4D83F5C0214158260036FE28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4D5E82702149671C00ED7DA8 /* TimerModel.swift */,
 				4D83F5BE214157D20036FE28 /* Enums.swift */,
 				4D83F5C22141586B0036FE28 /* Punch.swift */,
 				4D83F5C421415B190036FE28 /* CSVLoader.swift */,
@@ -557,7 +558,6 @@
 		4DB5C6662147A76100B71535 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				4D5E82702149671C00ED7DA8 /* TimerViewModel.swift */,
 				4D83F5C8214160C60036FE28 /* RoundViewModel.swift */,
 			);
 			path = ViewModels;
@@ -860,7 +860,7 @@
 				4D77714D2146BF9300B9C26F /* PanelCollectionView.swift in Sources */,
 				4DE0F16F2145025600C31B27 /* SlideTwoView.swift in Sources */,
 				4DB5C6632147027400B71535 /* ObjectCache.swift in Sources */,
-				4D5E82712149671C00ED7DA8 /* TimerViewModel.swift in Sources */,
+				4D5E82712149671C00ED7DA8 /* TimerModel.swift in Sources */,
 				4D80055F2143BE14002044E5 /* ToolbarView.swift in Sources */,
 				4D83F59421414D380036FE28 /* AppDelegate.swift in Sources */,
 				4D83F5C32141586B0036FE28 /* Punch.swift in Sources */,
@@ -871,7 +871,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5E82722149672B00ED7DA8 /* TimerViewModel.swift in Sources */,
+				4D5E82722149672B00ED7DA8 /* TimerModel.swift in Sources */,
 				4DB5C6702147ADC400B71535 /* RoundViewModel.swift in Sources */,
 				4D83F5A921414D3A0036FE28 /* CornerDemoTests.swift in Sources */,
 				4DB5C66B2147ADAC00B71535 /* CSVLoader.swift in Sources */,

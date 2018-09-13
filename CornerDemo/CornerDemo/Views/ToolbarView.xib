@@ -15,7 +15,7 @@
                 <outlet property="lblDuration" destination="DVJ-m7-x4L" id="sw1-ly-XW2"/>
                 <outlet property="lblFightState" destination="iOC-zO-L3n" id="mIG-1Y-eaz"/>
                 <outlet property="playBtn" destination="lcS-aK-kPy" id="Wp3-XP-us2"/>
-                <outlet property="progressView" destination="Ke7-4d-Wip" id="m1e-S3-FJd"/>
+                <outlet property="progressView" destination="Ke7-4d-Wip" id="xbd-Xa-hXS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
