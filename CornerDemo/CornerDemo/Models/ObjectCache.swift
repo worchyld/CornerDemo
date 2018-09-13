@@ -10,13 +10,13 @@ import Foundation
 
 struct ObjectCache {
 
-    static let dateComponentsFormatter: DateComponentsFormatter = {
+    static let stopWatchFormatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .positional
         formatter.calendar = Calendar.current
-        formatter.allowedUnits = [ .hour, .minute, .second, .nanosecond ]
+        formatter.allowsFractionalUnits = true
+        formatter.allowedUnits = [ .minute, .second, .nanosecond ]
         formatter.zeroFormattingBehavior = [ .pad ]
-        //let formatted = formatter.string(from: ts)
         return formatter
     }()
 
