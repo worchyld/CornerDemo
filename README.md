@@ -12,7 +12,7 @@ Demo app for a job application
 
 * pause by amantaka from the Noun Project
 
-# Screenshot
+# Screenshots
 
 <img src="./screenshot.png" alt="Screenshot" width="350">
 
