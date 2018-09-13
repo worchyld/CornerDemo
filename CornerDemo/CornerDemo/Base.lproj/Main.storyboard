@@ -62,7 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="WuT-NE-i5h">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="9W9-lu-QRK">
+                        <barButtonItem key="leftBarButtonItem" image="hamburger-menu" id="9W9-lu-QRK">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="PWg-fk-WEw" kind="presentation" id="Mi1-iX-gTf"/>
@@ -167,4 +167,7 @@
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hamburger-menu" width="30" height="30"/>
+    </resources>
 </document>
