@@ -125,7 +125,8 @@ extension ToolbarView {
         self.updateDurationText(time: time)
 
         if (time > 0) {
-            self.progressView.progress -= (180 / 100)
+            let interval = Float(0.01)
+            self.progressView.progress -= interval
         }
     }
 
